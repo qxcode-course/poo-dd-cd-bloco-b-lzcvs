@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_16-39-31",
+            "content": "@@ -1,353 +0,0 @@\n-class Chinela:%0A    def __init__(self, tamanho: int):%0A        self.tamanho = 0%0A    def getTamanho(self):%0A        return self.__tamanho%0A    def setTamanho(self, valor):%0A         if valor %3E 19 and valor %3C 50:%0A             self.tamanho = valor%0A%0Achinela = Chinela()%0A%0Awhile chinela.getTamanho() == 0:%0A    tamanho = int(input())%0A    chinela.setTamanho(tamanho)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-06_19-56-32",
+            "content": "@@ -252,23 +252,16 @@\n Chinela(\n-tamanho\n )%0A%0Awhile\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-06_19-56-40",
+            "content": "@@ -233,16 +233,17 @@\n = valor%0A\n+%0A\n chinela \n@@ -256,9 +256,15 @@\n ela(\n-2\n+tamanho\n )%0A%0Aw\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-06_19-57-10",
+            "content": "@@ -251,17 +251,17 @@\n Chinela(\n-0\n+2\n )%0A%0Awhile\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-06_19-57-17",
+            "content": "@@ -51,34 +51,32 @@\n ):%0A        self.\n-__\n tamanho = 0%0A    \n@@ -71,16 +71,16 @@\n nho = 0%0A\n+\n     def \n@@ -168,16 +168,17 @@\n         \n+ \n if valor\n@@ -183,12 +183,11 @@\n or %3E\n-= 20\n+ 19\n  and\n@@ -198,31 +198,11 @@\n or %3C\n-=\n  50\n- and valor %25 2 == 0\n :%0A  \n@@ -213,26 +213,24 @@\n        self.\n-__\n tamanho = va\n@@ -237,144 +237,8 @@\n lor%0A\n-             print(f'tamanho %7Bself.__tamanho%7D selecionado')%0A        else:%0A            print('nao tem desse pede outro')%0A             %0A%0A%0A\n chin\n@@ -288,16 +288,16 @@\n ) == 0:%0A\n+\n     tama\n@@ -316,28 +316,8 @@\n put(\n-%22digite um n%C3%BAmero: %22\n ))%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-06_20-08-08",
+            "content": "@@ -5,17 +5,17 @@\n s Chinel\n-o\n+a\n :%0A    de\n@@ -25,24 +25,38 @@\n _init__(self\n+, tamanho: int\n ):%0A        s\n@@ -87,16 +87,17 @@\n f getTam\n+a\n nho(self\n@@ -158,15 +158,13 @@\n lf, \n-num:int\n+valor\n ):%0A \n@@ -173,19 +173,21 @@\n      if \n-num\n+valor\n  %3E= 20 a\n@@ -193,13 +193,15 @@\n and \n-num %3E\n+valor %3C\n = 50\n@@ -205,19 +205,21 @@\n  50 and \n-num\n+valor\n  %25 2 == \n@@ -217,24 +217,25 @@\n r %25 2 == 0:%0A\n+ \n             \n@@ -255,12 +255,15 @@\n o = \n-num%0A\n+valor%0A \n     \n@@ -278,16 +278,24 @@\n print(f'\n+tamanho \n %7Bself.__\n@@ -307,28 +307,18 @@\n ho%7D \n-escolhido com sucess\n+selecionad\n o')%0A\n@@ -353,37 +353,50 @@\n int(\n-f\n 'nao \n-vai ta tendo desse...')\n+tem desse pede outro')%0A             %0A\n %0A%0Ach\n@@ -472,17 +472,17 @@\n t(input(\n-'\n+%22\n digite u\n@@ -489,17 +489,19 @@\n m n%C3%BAmero\n-'\n+: %22\n ))%0A    c\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-06_20-17-08",
+            "content": "@@ -182,9 +182,9 @@\n num \n-%3C\n+%3E\n = 50\n@@ -375,18 +375,19 @@\n = Chinel\n-o(\n+a(0\n )%0A%0Awhile\n@@ -397,24 +397,25 @@\n inela.getTam\n+a\n nho() == 0:%0A\n@@ -454,16 +454,13 @@\n um n\n-%C3%83%C2%BA\n+%C3%BA\n mero\n-: \n '))%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-10-06_20-19-51",
+            "content": "class Chinelo:\n    def __init__(self):\n        self.__tamanho = 0\n    def getTamnho(self):\n        return self.__tamanho\n    def setTamanho(self, num:int):\n        if num >= 20 and num <= 50 and num % 2 == 0:\n            self.__tamanho = num\n            print(f'{self.__tamanho} escolhido com sucesso')\n        else:\n            print(f'nao vai ta tendo desse...')\n\nchinela = Chinelo()\n\nwhile chinela.getTamnho() == 0:\n    tamanho = int(input('digite um n\u00c3\u00bamero: '))\n    chinela.setTamanho(tamanho)",
+            "lines": "17"
+        }
+    ]
+}
