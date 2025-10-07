@@ -1,0 +1,154 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_16-46-34",
+            "content": "@@ -1,380 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho: str = ''%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A    def setTamanho(self, valor: str):%0A        if valor == 'PP' or valor == 'P' or valor == 'M' or valor == 'G' or valor == 'GG' or valor == 'XG':%0A            print('camisa boa')%0A        else:%0A            print('tamanho invalido. tente novamente')\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-07_16-51-49",
+            "content": "@@ -342,54 +342,39 @@\n nt('\n-fail: Valor I\n+tamanho i\n nvalido\n-,\n+.\n  tente \n-PP, P M, G, GG ou XG\n+novamente\n ')\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-07_16-52-28",
+            "content": "@@ -392,179 +392,4 @@\n XG')\n-%0A%0Adef main():%0A%0A    while True:%0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end':%0A            break\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-07_16-57-28",
+            "content": "@@ -406,29 +406,8 @@\n ():%0A\n-    camisa = Camisa()\n %0A   \n@@ -567,35 +567,4 @@\n reak\n-%0A        else:%0A            ('')\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_16-58-47",
+            "content": "@@ -617,22 +617,6 @@\n   ('\n-comando invalido\n ')\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_16-58-48",
+            "content": "@@ -589,62 +589,8 @@\n eak%0A\n-        elif args%5B0%5D == 'show':%0A            print('')%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_16-59-12",
+            "content": "@@ -1,316 +1,520 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho: str = ''%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A    def setTamanho(self, valor: str):%0A        if valor == 'PP' or valor == 'P' or valor == 'M' or valor == 'G' or valor == 'GG' or valor == 'XG':%0A            print('camisa boa')%0A\n+@@ -1,8 +1,28 @@%0A+@@ -1,697 +1,42 @@%250A-%0A class Ca%0A@@ -26,17 +26,19 @@%0A  Camisa:%0A-%250A%0A+%25250A%0A     def %0A@@ -52,17 +52,19 @@%0A _(self):%0A-%250A%0A+%25250A%0A         %0A@@ -87,17 +87,19 @@%0A str = ''%0A-%250A%0A+%25250A%0A     def %0A@@ -120,15 +120,19 @@%0A f) -%0A-%253E%0A+%25253E%0A  str:%0A-%250A%0A+%25250A%0A     %0A@@ -156,17 +156,19 @@%0A _tamanho%0A-%250A%0A+%25250A%0A     def %0A@@ -196,17 +196,19 @@%0A r: str):%0A-%250A%0A+%25250A%0A         %0A@@ -306,17 +306,19 @@%0A == 'XG':%0A-%250A%0A+%25250A%0A         %0A@@ -340,17 +340,19 @@%0A sa boa')%0A-%250A%0A+%25250A%0A         %0A@@ -348,33 +348,35 @@%0A %25250A\n     \n@@ -515,32 +515,45 @@\n 0A        else:%0A\n+-%250A%0A+%25250A%0A \n             prin\n@@ -556,359 +556,953 @@\n prin\n-t('fail: Valor Invalido, tente PP, P M, G, GG ou XG')%0A%0Adef main():%0A    camisa = Camisa()%0A    while True:%0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        elif args%5B0%5D == 'show':%0A            print('$show')%0A        else:%0A            ('comando invalido')\n+%0A@@ -428,18 +428,22 @@%0A  ou XG')%0A-%250A%250A%0A+%25250A%25250A%0A def main%0A@@ -445,17 +445,19 @@%0A  main():%0A-%250A%0A+%25250A%0A     cami%0A@@ -469,17 +469,19 @@%0A Camisa()%0A-%250A%0A+%25250A%0A     whil%0A@@ -487,17 +487,19 @@%0A le True:%0A-%250A%0A+%25250A%0A         %0A@@ -517,17 +517,19 @@%0A  input()%0A-%250A%0A+%25250A%0A         %0A@@ -542,13 +542,17 @@%0A list%0A-%255Bstr%255D%0A+%25255Bstr%25255D%0A  = l%0A@@ -565,17 +565,19 @@%0A lit(' ')%0A-%250A%0A+%25250A%0A         %0A@@ -598,10 +598,14 @@%0A ine)%0A-%250A%250A%0A+%25250A%25250A%0A     %0A@@ -611,27 +611,31 @@%0A      if args%0A-%255B0%255D%0A+%25255B0%25255D%0A  == 'end':%250A %0A@@ -632,17 +632,19 @@%0A = 'end':%0A-%250A%0A+%25250A%0A         %0A@@ -652,17 +652,19 @@%0A    break%0A-%250A%0A+%25250A%0A         %0A@@ -676,11 +676,15 @@%0A args%0A-%255B0%255D%0A+%25255B0%25255D%0A  == %0A@@ -690,17 +690,19 @@%0A  'show':%0A-%250A%0A+%25250A%0A         %0A@@ -719,17 +719,19 @@%0A '$show')%0A-%250A%0A+%25250A%0A         %0A@@ -735,17 +735,19 @@%0A    else:%0A-%250A%0A+%25250A%0A         %0A@@ -770,8 +770,63 @@%0A valido')%0A+%250A+@@ -640,13 +640,8 @@%25250A nt('%25250A-$show%25250A ')%2525250A %25250A%250A%0A\n",
+            "lines": "129"
+        },
+        {
+            "label": "2025-10-07_16-59-16",
+            "content": "@@ -694,11 +694,4 @@\n do')\n-%0Amain()\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_16-59-34",
+            "content": "@@ -389,20 +389,16 @@\n ou XG')%0A\n-    \n %0Adef mai\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_16-59-51",
+            "content": "@@ -389,16 +389,20 @@\n ou XG')%0A\n+    \n %0Adef mai\n@@ -637,26 +637,21 @@\n     \n-camisa.getTamanho(\n+print('$show'\n )%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_16-59-52",
+            "content": "@@ -393,39 +393,8 @@\n G')%0A\n-    def show():%0A        print()\n %0Adef\n@@ -633,20 +633,26 @@\n     \n-print(\n camisa\n+.getTamanho(\n )%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-00-45",
+            "content": "@@ -393,16 +393,43 @@\n G')%0A    \n+def show():%0A        print()\n %0Adef mai\n@@ -672,18 +672,16 @@\n t(camisa\n-()\n )%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-07_17-01-27",
+            "content": "@@ -426,19 +426,16 @@\n  Camisa(\n-' '\n )%0A    wh\n@@ -645,16 +645,18 @@\n t(camisa\n+()\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-01-38",
+            "content": "@@ -426,16 +426,19 @@\n  Camisa(\n+' '\n )%0A    wh\n@@ -642,16 +642,22 @@\n   print(\n+camisa\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-01-44",
+            "content": "@@ -639,22 +639,16 @@\n   print(\n-camisa\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-01-45",
+            "content": "@@ -639,16 +639,22 @@\n   print(\n+camisa\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-01-50",
+            "content": "@@ -643,16 +643,8 @@\n int(\n-'size()'\n )%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-02-01",
+            "content": "@@ -644,18 +644,16 @@\n nt('size\n-: \n ()')%0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-02-07",
+            "content": "@@ -651,24 +651,8 @@\n e: (\n-%7Bself.__tamanho%7D\n )')%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-02-37",
+            "content": "@@ -639,17 +639,16 @@\n   print(\n-f\n 'size: (\n@@ -648,22 +648,20 @@\n size: (%7B\n-camisa\n+self\n .__taman\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-02-44",
+            "content": "@@ -652,20 +652,26 @@\n e: (\n-getT\n+%7Bcamisa.__t\n amanho\n-()\n+%7D\n )')%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-02-58",
+            "content": "@@ -651,16 +651,9 @@\n ze: \n-%7Bcamisa.\n+(\n getT\n@@ -664,9 +664,9 @@\n ho()\n-%7D\n+)\n ')%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-03-24",
+            "content": "@@ -647,17 +647,16 @@\n f'size: \n-(\n %7Bcamisa.\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-03-46",
+            "content": "@@ -669,17 +669,16 @@\n manho()%7D\n-)\n ')%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-03-50",
+            "content": "@@ -656,17 +656,17 @@\n %7Bcamisa.\n-s\n+g\n etTamanh\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-05-35",
+            "content": "@@ -667,23 +667,16 @@\n Tamanho(\n-tamanho\n )%7D)')%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-05-47",
+            "content": "@@ -667,22 +667,23 @@\n Tamanho(\n-camisa\n+tamanho\n )%7D)')%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-07_17-05-47",
+            "content": "@@ -1,742 +1,232 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho: str = ''%0A    def getTamanho(self) -%3E\n+@@ -163,23 +163,16 @@%0A or: str)%0A- -%253E\n  str\n-:\n %0A \n- \n+:%250A\n       \n-return self.__tamanho%0A    def setTamanho(self, valor: str) -%3E str:%0A        if valor == 'PP' or valor == 'P' or valor == 'M' or valor == 'G' or valor == 'GG' or valor == 'XG':%0A            return self.__tamanho%0A        else:%0A            print('fail: Valor Invalido, tente PP, P M, G, GG ou XG')%0A    %0Adef main():%0A    camisa = Camisa()%0A    while True:%0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        elif args%5B0%5D == 'show':%0A            print(f'size: (%7Bcamisa.getTamanho()%7D)')%0A        else:%0A            ('comando invalido')%0Amain()\n+%0A@@ -285,22 +285,35 @@%0A         %0A-return%0A+print('camisa boa')%0A %250A       %0A@@ -656,17 +656,17 @@%0A %257Bcamisa.%0A-g%0A+s%0A etTamanh%0A@@ -667,16 +667,22 @@%0A Tamanho(%0A+camisa%0A )%257D)')%250A  %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-07_17-06-34",
+            "content": "@@ -1,8 +1,29 @@\n+@@ -1,742 +1,108 @@%0A-\n class Ca\n@@ -27,17 +27,19 @@\n  Camisa:\n-%0A\n+%250A\n     def \n@@ -53,17 +53,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -88,17 +88,19 @@\n str = ''\n-%0A\n+%250A\n     def \n@@ -117,23 +117,27 @@\n (self) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n         \n@@ -153,25 +153,27 @@\n lf.__tamanho\n-%0A\n+%250A\n     def setT\n@@ -202,15 +202,19 @@\n r) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -316,17 +316,19 @@\n == 'XG':\n-%0A\n+%250A\n         \n@@ -352,17 +352,19 @@\n _tamanho\n-%0A\n+%250A\n         \n@@ -360,33 +360,35 @@\n %250A        else:\n-%0A\n+%250A\n             retu\n@@ -444,14 +444,18 @@\n  XG'\n-%0A\n+%250A\n     \n-%0A\n+%250A\n def \n@@ -461,17 +461,19 @@\n  main():\n-%0A\n+%250A\n     cami\n@@ -485,17 +485,19 @@\n Camisa()\n-%0A\n+%250A\n     whil\n@@ -503,17 +503,19 @@\n le True:\n-%0A\n+%250A\n         \n@@ -533,17 +533,19 @@\n  input()\n-%0A\n+%250A\n         \n@@ -558,13 +558,17 @@\n list\n-%5Bstr%5D\n+%255Bstr%255D\n  = l\n@@ -581,17 +581,19 @@\n lit(' ')\n-%0A\n+%250A\n         \n@@ -614,10 +614,14 @@\n ine)\n-%0A%0A\n+%250A%250A\n     \n@@ -627,27 +627,31 @@\n      if args\n-%5B0%5D\n+%255B0%255D\n  == 'end':%0A \n@@ -648,17 +648,19 @@\n = 'end':\n-%0A\n+%250A\n         \n@@ -668,17 +668,19 @@\n    break\n-%0A\n+%250A\n         \n@@ -692,11 +692,15 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n@@ -706,17 +706,19 @@\n  'show':\n-%0A\n+%250A\n         \n@@ -740,9 +740,11 @@\n e: (\n-%7B\n+%257B\n cami\n@@ -762,13 +762,17 @@\n ho()\n-%7D)')%0A\n+%257D)')%250A\n     \n@@ -780,17 +780,19 @@\n    else:\n-%0A\n+%250A\n         \n@@ -819,11 +819,146 @@\n do')\n-%0A\n+%250A\n main()\n+%0A+@@ -340,23 +340,22 @@%250A         %250A-return %250A+print(%250A 'fail: V%250A@@ -396,16 +396,17 @@%250A G ou XG'%250A+)%250A %25250A    %25250Ade%250A%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-07_17-07-21",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = ''\n    def getTamanho(self) -> str:\n        return self.__tamanho\n    def setTamanho(self, valor: str) -> str:\n        if valor == 'PP' or valor == 'P' or valor == 'M' or valor == 'G' or valor == 'GG' or valor == 'XG':\n            return self.__tamanho\n        else:\n            return 'fail: Valor Invalido, tente PP, P M, G, GG ou XG'\n    \ndef main():\n    camisa = Camisa()\n    while True:\n        line: str = input()\n        args: list[str] = line.split(' ')\n        print(f'$' + line)\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'show':\n            print(f'size: ({camisa.getTamanho()})')\n        else:\n            ('comando invalido')\nmain()",
+            "lines": "25"
+        }
+    ]
+}
