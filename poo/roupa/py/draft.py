@@ -5,10 +5,12 @@ class Camisa:
         return self.__tamanho
     def setTamanho(self, valor: str) -> str:
         if valor == 'PP' or valor == 'P' or valor == 'M' or valor == 'G' or valor == 'GG' or valor == 'XG':
-            return self.__tamanho
+            self.__tamanho = valor
+            return valor
         else:
-            return 'fail: Valor Invalido, tente PP, P M, G, GG ou XG'
-    
+            print('fail: Valor inválido, tente PP, P, M, G, GG ou XG')
+    def show(self) -> None:
+        print(f"size: ({self.__tamanho})")
 def main():
     camisa = Camisa()
     while True:
@@ -19,7 +21,10 @@ def main():
         if args[0] == 'end':
             break
         elif args[0] == 'show':
-            print(f'size: ({camisa.getTamanho()})')
+            camisa.show()
+        elif args[0] == 'size':
+            valor = args[1]
+            camisa.setTamanho(valor)
         else:
             ('comando invalido')
 main()
