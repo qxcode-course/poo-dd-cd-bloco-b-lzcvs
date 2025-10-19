@@ -1,0 +1,454 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-19_17-03-52",
+            "content": "@@ -304,23 +304,16 @@\n otebook.\n-mostarLigado\n+ligar\n ()%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-19_17-04-10",
+            "content": "@@ -155,14 +155,15 @@\n     \n-print(\n+return \n self\n@@ -171,17 +171,16 @@\n __ligado\n-)\n %0A    def\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-19_17-04-34",
+            "content": "@@ -323,49 +323,4 @@\n o()%0A\n-notebook.setLigado()%0Anotebook.mostrarligado()\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-19_17-06-16",
+            "content": "@@ -204,16 +204,55 @@\n valor):%0A\n+        if isinstace(valor, bool):%0A    \n         \n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-10-19_17-06-28",
+            "content": "@@ -186,32 +186,39 @@\n f setLigado(self\n+, valor\n ):%0A        self.\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-19_17-06-37",
+            "content": "@@ -123,25 +123,24 @@\n     def most\n-r\n arLigado(sel\n@@ -262,17 +262,16 @@\n ook.most\n-r\n arLigado\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-19_17-06-48",
+            "content": "@@ -300,28 +300,28 @@\n o()%0Anotebook.mostrar\n-L\n+l\n igado()\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-19_17-06-55",
+            "content": "@@ -202,47 +202,8 @@\n f):%0A\n-        if self.__ligado == False:%0A    \n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-19_17-07-49",
+            "content": "@@ -1,277 +1,35 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def setLigado(self):%0A        if self.__ligado == False:%0A            self.__ligado =\n+@@ -269,62 +269,8 @@%0A\n  True%0A\n+-%250A\n     \n@@ -37,17 +37,19 @@\n    else:\n-%0A\n+%250A\n         \n@@ -84,97 +84,53 @@\n o')%0A\n-%0Anotebook = Notebook()%0Anotebook.mostrarLigado()%0Anotebook.setLigado()%0Anotebook.mostrarLigado()\n+ %250A%250Ano%0A@@ -318,10 +318,8 @@%0A o()%250A%0A-##%0A note%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-19_17-08-41",
+            "content": "@@ -352,19 +352,23 @@\n otebook.\n-set\n+mostrar\n Ligado()\n@@ -369,39 +369,35 @@\n gado()%0Anotebook.\n-mostrar\n+set\n Ligado()%0Anoteboo\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-09-04",
+            "content": "@@ -362,21 +362,16 @@\n tLigado(\n-False\n )%0Anotebo\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-09-29",
+            "content": "@@ -199,15 +199,8 @@\n self\n-, valor\n ):%0A \n@@ -213,13 +213,21 @@\n  if \n-valor\n+self.__ligado\n  == \n@@ -358,24 +358,29 @@\n k.setLigado(\n+False\n )%0Anotebook.m\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-09-50",
+            "content": "@@ -202,22 +202,16 @@\n f, valor\n-: bool\n ):%0A     \n@@ -361,21 +361,16 @@\n tLigado(\n-False\n )%0Anotebo\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-10-03",
+            "content": "@@ -367,19 +367,20 @@\n tLigado(\n-Tru\n+Fals\n e)%0Anoteb\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-10-12",
+            "content": "@@ -1,430 +1,55 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def setLigado(self, valor: bool):%0A        if valor == False:%0A            self.__ligado = \n+@@ -367,20 +367,19 @@%0A tLigado(%0A-Fals%0A+\n Tru\n-e\n %0A \n-       else:%0A            print('notebook desligado')%0A%0Anotebook = Notebook()%0Anotebook.setLigado(False)%0Anotebook.mostrarLigado()%0Anotebook.mostrarLigado()\n+e)%250Anoteb%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-19_17-10-18",
+            "content": "@@ -363,24 +363,29 @@\n k.setLigado(\n+False\n )%0Anotebook.m\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-10-27",
+            "content": "@@ -202,16 +202,22 @@\n f, valor\n+: bool\n ):%0A     \n@@ -226,31 +226,22 @@\n  if \n-isinstance(valor, bool)\n+valor == False\n :%0A  \n@@ -266,21 +266,20 @@\n igado = \n-valor\n+True\n %0A       \n@@ -307,44 +307,28 @@\n int(\n-%22Fail: valor deve ser True ou False%22\n+'notebook desligado'\n )%0A%0An\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-11-18",
+            "content": "@@ -387,20 +387,16 @@\n tLigado(\n-True\n )%0Anotebo\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-11-26",
+            "content": "@@ -387,20 +387,19 @@\n tLigado(\n-Fals\n+Tru\n e)%0Anoteb\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-11-31",
+            "content": "@@ -377,30 +377,31 @@\n otebook.\n-mostrar\n+set\n Ligado(\n+False\n )%0Anotebo\n@@ -399,39 +399,38 @@\n e)%0Anotebook.\n-set\n+mostrar\n Ligado(\n-False\n )%0Anotebook.m\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-11-37",
+            "content": "@@ -412,19 +412,20 @@\n tLigado(\n-Tru\n+Fals\n e)%0Anoteb\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-11-49",
+            "content": "@@ -283,112 +283,74 @@\n     \n-def ligar(self):%0A        if self.__ligado == False:%0A            return 'erro: ligue o notebook primeiro'\n+    else:%0A            print(%22Fail: valor deve ser True ou False%22)%0A\n %0Anot\n@@ -418,16 +418,16 @@\n o(True)%0A\n+\n notebook\n@@ -422,29 +422,28 @@\n ue)%0Anotebook.mostrarLigado()\n-%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-13-04",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,492 +1,34 @@%0A-\n class No\n@@ -28,17 +28,19 @@\n otebook:\n-%0A\n+%250A\n     # li\n@@ -51,17 +51,19 @@\n desligar\n-%0A\n+%250A\n     # mo\n@@ -67,17 +67,19 @@\n  mostrar\n-%0A\n+%250A\n     # us\n@@ -80,17 +80,19 @@\n   # usar\n-%0A\n+%250A\n     def \n@@ -102,25 +102,27 @@\n nit__(self):\n-%0A\n+%250A\n         self\n@@ -144,17 +144,19 @@\n  = False\n-%0A\n+%250A\n     def \n@@ -171,25 +171,27 @@\n igado(self):\n-%0A\n+%250A\n         prin\n@@ -206,17 +206,19 @@\n _ligado)\n-%0A\n+%250A\n     def \n@@ -240,17 +240,19 @@\n  valor):\n-%0A\n+%250A\n         \n@@ -278,17 +278,19 @@\n , bool):\n-%0A\n+%250A\n         \n@@ -314,17 +314,19 @@\n  = valor\n-%0A\n+%250A\n     def \n@@ -337,17 +337,19 @@\n r(self):\n-%0A\n+%250A\n         \n@@ -374,17 +374,19 @@\n = False:\n-%0A\n+%250A\n         \n@@ -429,17 +429,19 @@\n imeiro')\n-%0A\n+%250A\n notebook\n@@ -453,17 +453,19 @@\n tebook()\n-%0A\n+%250A\n notebook\n@@ -472,33 +472,35 @@\n .mostrarLigado()\n-%0A\n+%250A\n notebook.setLiga\n@@ -507,17 +507,19 @@\n do(True)\n-%0A\n+%250A\n notebook\n@@ -538,21 +538,79 @@\n do()\n-%0Anotebook\n+%250A%0A+@@ -485,20 +485,4 @@%250A o()%25250A%250A-%0A note%0A@@ -39,8 +39,9 @@%0A \n .ligar()\n@@ -609,8 +609,14 @@\n .ligar()\n+%0A+%250A%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-10-19_17-13-22",
+            "content": "@@ -450,20 +450,19 @@\n tLigado(\n-Fals\n+Tru\n e)%0Anoteb\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-19_17-13-27",
+            "content": "@@ -406,16 +406,25 @@\n ebook()%0A\n+notebook.\n mostrarL\n@@ -428,16 +428,69 @@\n arLigado\n+()%0Anotebook.setLigado(False)%0Anotebook.mostrarLigado()\n %0Anoteboo\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-19_17-13-48",
+            "content": "@@ -406,25 +406,16 @@\n ebook()%0A\n-notebook.\n mostrarL\n@@ -419,18 +419,16 @@\n arLigado\n-()\n %0Anoteboo\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-10-19_17-13-48",
+            "content": "@@ -451,25 +451,4 @@\n ar()\n-%0Anotebook.setLigado()\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-10-19_17-14-02",
+            "content": "@@ -471,9 +471,5 @@\n ado(\n-True\n )\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-14-07",
+            "content": "@@ -476,29 +476,4 @@\n rue)\n-%0Anotebook.mostrarLigado()\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-19_17-14-20",
+            "content": "@@ -287,129 +287,8 @@\n def \n-usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('erro: ligue o notebook primeiro')%0A    #def \n liga\n@@ -301,17 +301,16 @@\n ):%0A     \n-#\n    if se\n@@ -338,17 +338,16 @@\n %0A       \n-#\n      pri\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-19_17-15-35",
+            "content": "@@ -563,18 +563,19 @@\n otebook.\n-us\n+lig\n ar()%0Anot\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-19_17-15-36",
+            "content": "@@ -572,10 +572,8 @@\n sar(\n-10\n )%0Ano\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-19_17-15-41",
+            "content": "@@ -399,97 +399,8 @@\n o')%0A\n-        elif self.__ligado == True:%0A            print(f'usado por %7Bself.valor%7D minutos')%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-19_17-16-34",
+            "content": "@@ -714,22 +714,4 @@\n do()\n-%0Anotebook.usar(20)\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-19_17-16-35",
+            "content": "@@ -462,16 +462,21 @@\n do por %7B\n+self.\n valor%7D m\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_17-16-44",
+            "content": "@@ -361,21 +361,16 @@\n  print('\n-msg: \n erro: li\n@@ -455,13 +455,8 @@\n t(f'\n-msg: \n usad\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_17-17-02",
+            "content": "@@ -489,24 +489,25 @@\n nutos')%0A    \n+#\n def ligar(se\n@@ -511,24 +511,26 @@\n (self):%0A    \n+ #\n    if self._\n@@ -546,32 +546,33 @@\n = False:%0A       \n+#\n      print('erro\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_17-17-54",
+            "content": "@@ -548,24 +548,28 @@\n se:%0A        \n+    \n print('erro:\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_17-17-54",
+            "content": "@@ -559,20 +559,29 @@\n  print('\n-msg:\n+erro: ligue o\n  noteboo\n@@ -586,16 +586,15 @@\n ook \n-desligad\n+primeir\n o')%0A\n@@ -729,21 +729,4 @@\n (20)\n-%0Anotebook.ligar()\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_17-18-28",
+            "content": "@@ -718,17 +718,16 @@\n sar(20)%0A\n-%0A\n notebook\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-19_17-18-43",
+            "content": "@@ -722,33 +722,8 @@\n 20)%0A\n-notebook.setLigado(False)\n %0Anot\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-19_17-18-43",
+            "content": "@@ -760,18 +760,8 @@\n .ligar()\n-%0Anotebook.\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-19_17-18-54",
+            "content": "@@ -758,28 +758,20 @@\n ok.ligar()%0Anotebook.\n-usar(10)\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-19_17-18-54",
+            "content": "@@ -509,33 +509,32 @@\n r(self):%0A       \n- \n if self.__ligado\n@@ -536,36 +536,32 @@\n igado == False:%0A\n-    \n         print('m\n@@ -589,86 +589,8 @@\n o')%0A\n-        else self.__ligado == True:%0A            print('msg: Status: ligado')%0A%0A\n note\n@@ -758,29 +758,28 @@\n ok.ligar()%0Anotebook.usar(10)\n-%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-19_17-19-47",
+            "content": "@@ -602,16 +602,38 @@\n     else\n+ self.__ligado == True\n :%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-19_17-20-09",
+            "content": "@@ -600,39 +600,17 @@\n       el\n-if self.__ligado == Tru\n+s\n e:%0A     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-19_17-21-19",
+            "content": "@@ -862,25 +862,8 @@\n sar(10)%0A\n-notebook.ligar()%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-19_17-21-29",
+            "content": "@@ -867,28 +867,20 @@\n 0)%0Anotebook.\n-setLigado(True\n+ligar(\n )%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-19_17-21-49",
+            "content": "@@ -887,25 +887,8 @@\n o(True)%0A\n-notebook.ligar()%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-19_17-22-02",
+            "content": "@@ -908,21 +908,4 @@\n r()%0A\n-notebook.usar(30)\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-19_17-22-12",
+            "content": "@@ -464,17 +464,16 @@\n msg: usa\n-n\n do por %7B\n@@ -670,58 +670,8 @@\n do')\n-%0A    def desligar(self):%0A        setLigado = False\n %0A%0Ano\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-19_17-22-58",
+            "content": "@@ -1,999 +1,51 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        elif self.__ligado == True:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            print('msg: notebook desligado')%0A        elif self.__ligado == True:%0A            print('msg: Status: ligado')%0A    def desligar(self):%0A        setLigado = False%0A%0Anotebook = Notebook()%0Anotebook.mostrarLigado()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Anotebook.setLigado(False)%0Anotebook.ligar()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.ligar()%0Anotebook.usar(30)%0Anotebook.desligar()\n+@@ -976,24 +976,4 @@%0A (30)%0A-%250Anotebook.desligar()%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-19_17-24-04",
+            "content": "@@ -996,23 +996,4 @@\n ar()\n-%0Anotebook.mostrar()\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-19_17-24-05",
+            "content": "@@ -997,28 +997,22 @@\n r()%0Anotebook.mostrar\n-Ligado\n ()\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-19_17-24-12",
+            "content": "@@ -700,25 +700,16 @@\n         \n-notebook.\n setLigad\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-19_17-24-22",
+            "content": "@@ -704,54 +704,21 @@\n     \n-if self.__ligado == True:%0A            self.__l\n+notebook.setL\n igad\n@@ -727,24 +727,16 @@\n = False%0A\n-        \n %0Anoteboo\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-19_17-25-03",
+            "content": "@@ -772,24 +772,8 @@\n     \n-print(setLigado)\n %0Anot\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-19_17-25-21",
+            "content": "@@ -774,21 +774,16 @@\n   print(\n-self.\n setLigad\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-19_17-25-28",
+            "content": "@@ -788,18 +788,16 @@\n etLigado\n-()\n )%0Anotebo\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-19_17-25-33",
+            "content": "@@ -772,53 +772,31 @@\n     \n-    \n print(\n-'msg: notebook desligado')%0A        \n+self.setLigado())\n %0Anot\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-19_17-25-49",
+            "content": "@@ -1,126 +1,35 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A\n+@@ -119,168 +119,8 @@%0A lse%250A%0A-\n     \n@@ -38,33 +38,35 @@\n f mostrar(self):\n-%0A\n+%250A\n         if self.\n@@ -75,33 +75,35 @@\n ligado == False:\n-%0A\n+%250A\n             prin\n@@ -122,33 +122,35 @@\n book desligado')\n-%0A\n+%250A\n         else:%0A  \n@@ -138,33 +138,35 @@\n %250A        else:\n-%0A\n+%250A\n             prin\n@@ -195,586 +195,60 @@\n o!')\n+%250A\n %0A    \n-def mostrarLigado(self):%0A        print(self.__ligado)%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            print('msg: notebook desligado')%0A        else:%0A            self.__ligado = True%0A            print('msg: Status: ligado')%0A    def desligar(self):%0A\n+ %0A@@ -631,41 +631,8 @@%0A ue:%250A%0A-     \n        \n- if \n self\n@@ -262,398 +262,19 @@\n do =\n-=\n  True\n-:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A        %0Anotebook = Notebook()%0Anotebook.mostrarLigado()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Anotebook.setLigado(False)%0Anotebook.ligar()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.ligar()%0Anotebook.usar(30)%0Anotebook.desligar()%0Anotebook.mostrarLigado()\n+%250A%0A     %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-19_17-39-21",
+            "content": "@@ -1265,40 +1265,4 @@\n do()\n-%0Anotebook.ligar()%0Anotebook.mostrar()\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-19_17-39-51",
+            "content": "@@ -189,15 +189,14 @@\n     \n-return \n+print(\n 'msg\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-40-08",
+            "content": "@@ -217,16 +217,17 @@\n sligado'\n+)\n %0A       \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-40-09",
+            "content": "@@ -1,712 +1,64 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A    def mostrar(self):%0A        if self.__ligado == False:%0A            return 'msg: notebook desligado'%0A        else:%0A            return 'msg: notebook ligado!%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            \n+@@ -236,39 +236,38 @@%0A se:%250A            %0A-return %0A+\n print(\n+%0A \n 'msg\n@@ -72,584 +72,54 @@\n ook \n-desligado')%0A        else:%0A            self.__ligado = True%0A            print('msg: Status: ligado')%0A    def desligar(self):%0A        if self.__ligado == True:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A        %0Anotebook = Notebook()%0Anotebook.mostrarLigado()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Anotebook.setLigado(False)%0Anotebook.ligar()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.ligar()%0Anotebook.usar(30)%0Anotebook.desligar()%0Anotebook.mostrarLigado()%0Anotebook.ligar()%0Anotebook.mostrar()\n+l%0A@@ -272,16 +272,18 @@%0A  ligado!%0A+')%0A %250A    def%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-19_17-40-22",
+            "content": "@@ -273,17 +273,16 @@\n  ligado!\n-'\n %0A    def\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-40-28",
+            "content": "@@ -963,18 +963,16 @@\n        %0A\n-# \n notebook\n@@ -985,18 +985,16 @@\n ebook()%0A\n-# \n notebook\n@@ -1002,34 +1002,32 @@\n mostrarLigado()%0A\n-# \n notebook.usar(10\n@@ -1020,34 +1020,32 @@\n tebook.usar(10)%0A\n-# \n notebook.setLiga\n@@ -1045,34 +1045,32 @@\n setLigado(True)%0A\n-# \n notebook.mostrar\n@@ -1070,34 +1070,32 @@\n mostrarLigado()%0A\n-# \n notebook.usar(20\n@@ -1096,18 +1096,16 @@\n sar(20)%0A\n-# \n notebook\n@@ -1122,18 +1122,16 @@\n (False)%0A\n-# \n notebook\n@@ -1131,34 +1131,32 @@\n otebook.ligar()%0A\n-# \n notebook.usar(10\n@@ -1157,18 +1157,16 @@\n sar(10)%0A\n-# \n notebook\n@@ -1182,18 +1182,16 @@\n o(True)%0A\n-# \n notebook\n@@ -1191,34 +1191,32 @@\n otebook.ligar()%0A\n-# \n notebook.usar(30\n@@ -1217,18 +1217,16 @@\n sar(30)%0A\n-# \n notebook\n@@ -1237,18 +1237,16 @@\n ligar()%0A\n-# \n notebook\n@@ -1262,18 +1262,16 @@\n igado()%0A\n-# \n notebook\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-40-41",
+            "content": "@@ -963,16 +963,18 @@\n        %0A\n+# \n notebook\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-40-49",
+            "content": "@@ -1321,13 +1321,12 @@\n ok.mostrar()\n-%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-40-58",
+            "content": "@@ -1330,29 +1330,4 @@\n r()%0A\n-notebook.mostrarLigado()%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-41-18",
+            "content": "@@ -1,1354 +1,251 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A    def mostrar(self):%0A        if self.__ligado == False:%0A            return 'msg: notebook desligado'%0A        else:%0A            return 'msg: notebook ligado!'%0A    def mostrarLigado(self):%0A        return self.__ligado%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            print('msg: notebook desligado')%0A        else:%0A            self.__ligado = True%0A            print('msg: Status: ligado')%0A    def desligar(self):%0A        if self.__ligado == True:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A    %0Anotebook = Notebook()%0A# notebook.mostrarLigado()%0A# notebook.usar(10)%0A# notebook.setLigado(True)%0A# notebook.mostrarLigado()%0A# notebook.usar(20)%0A# notebook.setLigado(False)%0A# notebook.ligar()%0A# notebook.usar(10)%0A# notebook.setLigado(True)%0A# notebook.ligar()%0A# notebook.usar(30)%0A# notebook.desligar()%0A# notebook.mostrarLigado()%0A# notebook.ligar()%0Anotebook.mostrar()%0Anotebook.mostrarLigado()\n+@@ -312,23 +312,22 @@%0A         %0A-return %0A+print(%0A self.__l%0A@@ -331,16 +331,17 @@%0A __ligado%0A+)%0A %250A    def%0A@@ -962,99 +962,12 @@%0A     %0A-def __str__(self):%250A        return f%2522Notebook(%257B'ligado' if self.__ligado else 'desligado'%257D)%2522%0A+    %0A %250Anot\n %0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-19_17-42-46",
+            "content": "@@ -1347,24 +1347,8 @@\n igado()%0A\n-notebook.ligar()\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-19_17-42-47",
+            "content": "@@ -653,41 +653,8 @@\n f):%0A\n-            self.__ligado = True%0A\n     \n@@ -735,32 +735,65 @@\n )%0A        else:%0A\n+            self.__ligado = True%0A\n             prin\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-19_17-43-11",
+            "content": "@@ -649,32 +649,36 @@\n (self):%0A        \n+    \n self.__ligado = \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-19_17-43-16",
+            "content": "@@ -1299,16 +1299,60 @@\n ligar()%0A\n+notebook.mostrar()%0Anotebook.mostrarLigado()%0A\n notebook\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-19_17-43-31",
+            "content": "@@ -177,38 +177,39 @@\n se:%0A            \n-print(\n+return \n 'msg: notebook d\n@@ -209,33 +209,32 @@\n ebook desligado'\n-)\n %0A        else:%0A \n@@ -236,38 +236,39 @@\n se:%0A            \n-print(\n+return \n 'msg: notebook l\n@@ -274,17 +274,16 @@\n ligado!'\n-)\n %0A    def\n@@ -312,22 +312,23 @@\n         \n-print(\n+return \n self.__l\n@@ -332,17 +332,16 @@\n __ligado\n-)\n %0A    def\n@@ -776,41 +776,8 @@\n se:%0A\n-            self.__ligado = True%0A\n     \n@@ -954,20 +954,16 @@\n o')%0A    \n-    \n %0Anoteboo\n@@ -977,16 +977,18 @@\n ebook()%0A\n+# \n notebook\n@@ -996,32 +996,34 @@\n mostrarLigado()%0A\n+# \n notebook.usar(10\n@@ -1016,32 +1016,34 @@\n tebook.usar(10)%0A\n+# \n notebook.setLiga\n@@ -1043,32 +1043,34 @@\n setLigado(True)%0A\n+# \n notebook.mostrar\n@@ -1070,32 +1070,34 @@\n mostrarLigado()%0A\n+# \n notebook.usar(20\n@@ -1098,16 +1098,18 @@\n sar(20)%0A\n+# \n notebook\n@@ -1126,16 +1126,18 @@\n (False)%0A\n+# \n notebook\n@@ -1137,32 +1137,34 @@\n otebook.ligar()%0A\n+# \n notebook.usar(10\n@@ -1165,16 +1165,18 @@\n sar(10)%0A\n+# \n notebook\n@@ -1192,16 +1192,18 @@\n o(True)%0A\n+# \n notebook\n@@ -1203,32 +1203,34 @@\n otebook.ligar()%0A\n+# \n notebook.usar(30\n@@ -1231,16 +1231,18 @@\n sar(30)%0A\n+# \n notebook\n@@ -1245,32 +1245,34 @@\n book.desligar()%0A\n+# \n notebook.mostrar\n@@ -1280,16 +1280,18 @@\n igado()%0A\n+# \n notebook\n@@ -1308,17 +1308,15 @@\n otebook.\n-mostr\n+lig\n ar()\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-19_17-44-14",
+            "content": "@@ -267,24 +267,25 @@\n ebook ligado\n+!\n ')%0A    def m\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-19_17-45-16",
+            "content": "@@ -17,68 +17,49 @@\n     \n-def __init__(self):%0A        self.__ligado: bool = False%0A    \n+# ligar desligar%0A    # mostrar%0A    # usar\n %0A   \n@@ -65,19 +65,20 @@\n   def __\n-str\n+init\n __(self)\n@@ -79,35 +79,32 @@\n (self):%0A        \n-if \n self.__ligado ==\n@@ -104,115 +104,22 @@\n gado\n- == True:%0A            return %22Notebook(ligado)%22%0A        else:%0A            return %22Notebook(desligado)%22%0A    \n+: bool = False\n %0A   \n@@ -158,35 +158,36 @@\n elf.__ligado == \n-Tru\n+Fals\n e:%0A            p\n@@ -192,24 +192,33 @@\n  print('\n-Status: \n+msg: notebook des\n ligado')\n@@ -255,19 +255,22 @@\n nt('\n-Status: des\n+msg: notebook \n liga\n@@ -266,37 +266,32 @@\n tebook ligado')%0A\n-    %0A\n     def mostrarL\n@@ -332,21 +332,16 @@\n ligado)%0A\n-    %0A\n     def \n@@ -434,21 +434,16 @@\n = valor%0A\n-    %0A\n     def \n@@ -520,20 +520,25 @@\n  print('\n-Fail\n+msg: erro\n : ligue \n@@ -569,39 +569,17 @@\n       el\n-if self.__ligado == Tru\n+s\n e:%0A     \n@@ -597,9 +597,14 @@\n t(f'\n-U\n+msg: u\n sand\n@@ -627,21 +627,16 @@\n nutos')%0A\n-    %0A\n     def \n@@ -648,35 +648,32 @@\n (self):%0A        \n-if \n self.__ligado ==\n@@ -667,32 +667,29 @@\n f.__ligado =\n-= False:\n+ True\n %0A           \n@@ -677,35 +677,34 @@\n  = True%0A        \n-   \n+if\n  self.__ligado =\n@@ -695,37 +695,40 @@\n  self.__ligado =\n- True\n+= False:\n %0A            pri\n@@ -731,17 +731,34 @@\n  print('\n-L\n+msg: notebook desl\n igado')%0A\n@@ -767,18 +767,31 @@\n       el\n-if\n+se:%0A           \n  self.__\n@@ -790,39 +790,37 @@\n  self.__ligado =\n-=\n  True\n-:\n %0A            pri\n@@ -823,38 +823,28 @@\n  print('\n-Fail: notebook j%EC%B9%98 est%EC%B9%98\n+msg: Status:\n  ligado'\n@@ -845,21 +845,16 @@\n igado')%0A\n-    %0A\n     def \n@@ -960,57 +960,11 @@\n nt('\n-Desligado')%0A        else:%0A            print('Fail\n+msg\n : no\n@@ -974,16 +974,8 @@\n ook \n-j%EC%B9%98 est%EC%B9%98 \n desl\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-19_17-45-52",
+            "content": "@@ -17,49 +17,68 @@\n     \n-# ligar desligar%0A    # mostrar%0A    # usar\n+def __init__(self):%0A        self.__ligado: bool = False%0A    \n %0A   \n@@ -76,36 +76,35 @@\n %0A    %0A    def __\n-init\n+str\n __(self):%0A      \n@@ -97,32 +97,35 @@\n (self):%0A        \n+if \n self.__ligado: b\n@@ -117,38 +117,131 @@\n elf.__ligado\n-: bool = False\n+ == True:%0A            return %22Notebook(ligado)%22%0A        else:%0A            return %22Notebook(desligado)%22%0A    \n %0A    def mos\n@@ -272,36 +272,35 @@\n elf.__ligado == \n-Fals\n+Tru\n e:%0A            p\n@@ -305,33 +305,24 @@\n  print('\n-msg: notebook des\n+Status: \n ligado')\n@@ -351,38 +351,35 @@\n      print('\n-msg: notebook \n+Status: des\n ligado')%0A   \n@@ -367,32 +367,37 @@\n us: desligado')%0A\n+    %0A\n     def mostrarL\n@@ -438,16 +438,21 @@\n ligado)%0A\n+    %0A\n     def \n@@ -545,16 +545,21 @@\n = valor%0A\n+    %0A\n     def \n@@ -640,17 +640,12 @@\n nt('\n-msg: erro\n+Fail\n : li\n@@ -672,33 +672,55 @@\n iro')%0A        el\n-s\n+if self.__ligado == Tru\n e:%0A            p\n@@ -730,14 +730,9 @@\n t(f'\n-msg: u\n+U\n sand\n@@ -755,16 +755,21 @@\n nutos')%0A\n+    %0A\n     def \n@@ -860,35 +860,100 @@\n          print('\n-msg\n+Ligado')%0A        elif self.__ligado == True:%0A            print('Fail\n : notebook ligad\n@@ -947,16 +947,24 @@\n otebook \n+j%EC%B9%98 est%EC%B9%98 \n ligado')\n@@ -960,24 +960,29 @@\n t%EC%B9%98 ligado')%0A\n+    %0A\n     def desl\n@@ -1084,11 +1084,57 @@\n nt('\n-msg\n+Desligado')%0A        else:%0A            print('Fail\n : no\n@@ -1140,16 +1140,24 @@\n otebook \n+j%EC%B9%98 est%EC%B9%98 \n desligad\n@@ -1191,16 +1191,310 @@\n ebook()%0A\n+notebook.mostrarLigado()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Anotebook.setLigado(False)%0Anotebook.ligar()%0Anotebook.usar(10)%0Anotebook.setLigado(True)%0Anotebook.ligar()%0Anotebook.usar(30)%0Anotebook.desligar()%0Anotebook.mostrarLigado()%0Anotebook.ligar()%0A\n notebook\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-19_17-47-46",
+            "content": "@@ -948,21 +948,4 @@\n ar()\n-%0Anotebook.ligar()\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-19_17-47-56",
+            "content": "@@ -957,13 +957,12 @@\n book.ligar()\n-%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-19_17-48-05",
+            "content": "@@ -949,26 +949,8 @@\n r()%0A\n-notebook.usar(20)%0A\n note\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-19_17-48-05",
+            "content": "@@ -976,29 +976,12 @@\n ook.ligar()%0A\n-notebook.usar(20)\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-19_17-48-16",
+            "content": "@@ -997,25 +997,8 @@\n usar(20)\n-%0Anotebook.mostrar\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-19_17-48-24",
+            "content": "@@ -1018,12 +1018,4 @@\n trar\n-Ligado()\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-19_17-48-25",
+            "content": "@@ -1026,24 +1026,4 @@\n do()\n-%0Anotebook.desligar()\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-19_17-49-03",
+            "content": "@@ -1046,20 +1046,4 @@\n ar()\n-%0Anotebook.mostar\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-19_17-49-11",
+            "content": "@@ -1044,31 +1044,22 @@\n igar()%0Anotebook.most\n-r\n ar\n-Ligado()\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-19_17-49-11",
+            "content": "@@ -1067,26 +1067,8 @@\n Ligado()\n-%0Anotebook.usar(20)\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-19_17-49-22",
+            "content": "class Notebook:\n    # ligar desligar\n    # mostrar\n    # usar\n    def __init__(self):\n        self.__ligado: bool = False\n    def mostrar(self):\n        if self.__ligado == False:\n            print('msg: notebook desligado')\n        else:\n            print('msg: notebook ligado')\n    def mostrarLigado(self):\n        print(self.__ligado)\n    def setLigado(self, valor):\n        if isinstance(valor, bool):\n            self.__ligado = valor\n    def usar(self, valor: int):\n        if self.__ligado == False:\n            print('msg: erro: ligue o notebook primeiro')\n        else:\n            print(f'msg: usando por {valor} minutos')\n    def ligar(self):\n        if self.__ligado == False:\n            self.__ligado = True\n            print('msg: notebook ligado')\n    def desligar(self):\n        if self.__ligado == True:\n            self.__ligado = False\n            print('msg: notebook desligado')\n        \nnotebook = Notebook()\nnotebook.mostrar()\nnotebook.usar(20)\nnotebook.ligar()\nnotebook.usar(20)\nnotebook.mostrarLigado()\nnotebook.desligar()\nnotebook.mostrarLigado()\nnotebook.usar(20)",
+            "lines": "39"
+        }
+    ]
+}

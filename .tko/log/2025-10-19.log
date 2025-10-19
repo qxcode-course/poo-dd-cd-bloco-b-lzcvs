@@ -6,3 +6,169 @@
 2025-10-19 16:22:56, MOVE, v:1, k:poo@relogio, mode:PICK
 2025-10-19 16:22:57, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
 2025-10-19 16:22:57, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-19 16:42:29, MOVE, v:1, k:poo@notebook, mode:DOWN
+2025-10-19 17:03:52, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-19 17:03:52, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:14
+2025-10-19 17:03:53, EXEC, v:1, k:poo@notebook, mode:FREE
+2025-10-19 17:04:10, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:14
+2025-10-19 17:04:11, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-19 17:04:11, EXEC, v:1, k:poo@notebook, mode:FREE
+2025-10-19 17:04:14, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-19 17:04:34, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:14
+2025-10-19 17:06:16, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:16
+2025-10-19 17:06:17, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:06:28, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:15
+2025-10-19 17:06:29, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:06:35, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:06:37, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:15
+2025-10-19 17:06:48, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:15
+2025-10-19 17:06:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:06:55, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:15
+2025-10-19 17:07:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:16
+2025-10-19 17:08:28, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:08:28, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:08:41, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:08:42, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:08:42, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:09:04, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:09:05, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:09:29, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:09:50, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:03, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:04, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:10:07, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:10:12, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:14, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:14, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:18, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:19, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:10:19, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:10:19, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:10:27, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:10:27, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:10:29, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:18, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:11:20, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:25, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:26, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:11:31, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:31, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:11:32, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:37, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:11:38, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:39, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-19 17:11:43, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-19 17:11:44, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:48, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:11:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:13:04, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:13:05, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:13:05, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:13:16, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:13:16, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:13:22, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:13:26, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:13:27, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:13:48, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:17
+2025-10-19 17:13:48, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:17
+2025-10-19 17:14:02, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:14:06, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:14:07, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:18
+2025-10-19 17:14:08, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:14:08, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:14:20, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:19
+2025-10-19 17:15:35, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:22
+2025-10-19 17:15:36, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:22
+2025-10-19 17:15:41, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:22
+2025-10-19 17:16:34, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:24
+2025-10-19 17:16:35, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:25
+2025-10-19 17:16:36, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:16:44, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:25
+2025-10-19 17:17:02, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:25
+2025-10-19 17:17:54, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:25
+2025-10-19 17:17:54, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:25
+2025-10-19 17:18:28, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:26
+2025-10-19 17:18:29, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:18:29, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:18:43, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:27
+2025-10-19 17:18:43, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:27
+2025-10-19 17:18:54, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:28
+2025-10-19 17:18:54, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:28
+2025-10-19 17:19:47, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:31
+2025-10-19 17:19:48, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:19:59, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:19:59, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:20:08, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:20:09, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:31
+2025-10-19 17:21:19, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:31
+2025-10-19 17:21:20, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:21:29, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:32
+2025-10-19 17:21:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:32
+2025-10-19 17:22:02, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:33
+2025-10-19 17:22:12, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:34
+2025-10-19 17:22:58, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:36
+2025-10-19 17:23:09, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:37
+2025-10-19 17:23:09, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:37
+2025-10-19 17:24:04, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:37
+2025-10-19 17:24:05, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:38
+2025-10-19 17:24:12, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:24:12, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:38
+2025-10-19 17:24:22, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:38
+2025-10-19 17:24:23, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:25:03, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:39
+2025-10-19 17:25:04, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-19 17:25:05, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-19 17:25:06, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:25:20, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:25:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:39
+2025-10-19 17:25:28, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:39
+2025-10-19 17:25:33, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:39
+2025-10-19 17:25:34, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:25:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:40
+2025-10-19 17:38:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:46
+2025-10-19 17:38:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:46
+2025-10-19 17:39:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:46
+2025-10-19 17:39:51, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:08, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:09, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:21, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:22, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:27, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:40:28, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:41, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:40:42, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:40:44, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-19 17:40:44, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-19 17:40:45, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:40:49, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:48
+2025-10-19 17:40:50, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-19 17:40:58, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:48
+2025-10-19 17:41:18, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:49
+2025-10-19 17:42:31, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:50
+2025-10-19 17:42:31, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:50
+2025-10-19 17:42:47, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:49
+2025-10-19 17:42:47, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:50
+2025-10-19 17:43:11, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:50
+2025-10-19 17:43:12, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:43:16, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:50
+2025-10-19 17:43:31, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:48
+2025-10-19 17:43:32, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:44:14, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:49
+2025-10-19 17:45:16, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:49
+2025-10-19 17:45:53, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:59
+2025-10-19 17:47:46, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:32
+2025-10-19 17:47:56, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:33
+2025-10-19 17:48:05, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:33
+2025-10-19 17:48:05, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:34
+2025-10-19 17:48:15, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:48:16, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:35
+2025-10-19 17:48:24, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:36
+2025-10-19 17:48:25, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:36
+2025-10-19 17:48:51, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:49:03, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:37
+2025-10-19 17:49:11, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:38
+2025-10-19 17:49:11, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:38
+2025-10-19 17:49:22, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0
+2025-10-19 17:49:22, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:39
+2025-10-19 17:52:29, MOVE, v:1, k:poo@notebook, mode:BACK
