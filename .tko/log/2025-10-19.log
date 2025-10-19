@@ -1,0 +1,8 @@
+2025-10-19 16:22:41, SELF, v:1, k:poo@relogio, alone:10
+2025-10-19 16:22:42, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-19 16:22:43, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:61
+2025-10-19 16:22:44, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-19 16:22:55, SELF, v:1, k:poo@relogio, rate:100, iagen:deepseek, alone:9, study:120
+2025-10-19 16:22:56, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-19 16:22:57, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
+2025-10-19 16:22:57, MOVE, v:1, k:poo@relogio, mode:BACK
