@@ -447,8 +447,93 @@
         },
         {
             "label": "2025-10-19_17-49-22",
-            "content": "class Notebook:\n    # ligar desligar\n    # mostrar\n    # usar\n    def __init__(self):\n        self.__ligado: bool = False\n    def mostrar(self):\n        if self.__ligado == False:\n            print('msg: notebook desligado')\n        else:\n            print('msg: notebook ligado')\n    def mostrarLigado(self):\n        print(self.__ligado)\n    def setLigado(self, valor):\n        if isinstance(valor, bool):\n            self.__ligado = valor\n    def usar(self, valor: int):\n        if self.__ligado == False:\n            print('msg: erro: ligue o notebook primeiro')\n        else:\n            print(f'msg: usando por {valor} minutos')\n    def ligar(self):\n        if self.__ligado == False:\n            self.__ligado = True\n            print('msg: notebook ligado')\n    def desligar(self):\n        if self.__ligado == True:\n            self.__ligado = False\n            print('msg: notebook desligado')\n        \nnotebook = Notebook()\nnotebook.mostrar()\nnotebook.usar(20)\nnotebook.ligar()\nnotebook.usar(20)\nnotebook.mostrarLigado()\nnotebook.desligar()\nnotebook.mostrarLigado()\nnotebook.usar(20)",
+            "content": "@@ -119,54 +119,8 @@\n lse%0A\n-        self.__bateria: Bateria %7C None = None%0A\n     \n@@ -899,147 +899,17 @@\n o')%0A\n-class Bateria:%0A    def __init__(self, capacidade):%0A        self.__capacidade: int = capacidade%0A        self.__carga: int = capacidade   %0A# \n+        %0A\n note\n@@ -941,26 +941,24 @@\n k.mostrar()%0A\n-# \n notebook.usa\n@@ -955,34 +955,32 @@\n tebook.usar(20)%0A\n-# \n notebook.ligar()\n@@ -972,34 +972,32 @@\n otebook.ligar()%0A\n-# \n notebook.usar(20\n@@ -998,18 +998,16 @@\n sar(20)%0A\n-# \n notebook\n@@ -1015,34 +1015,32 @@\n mostrarLigado()%0A\n-# \n notebook.desliga\n@@ -1043,18 +1043,16 @@\n ligar()%0A\n-# \n notebook\n@@ -1068,18 +1068,16 @@\n igado()%0A\n-# \n notebook\n",
             "lines": "39"
+        },
+        {
+            "label": "2025-10-19_18-15-49",
+            "content": "@@ -1078,16 +1078,18 @@\n dade   %0A\n+# \n notebook\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-19_18-15-54",
+            "content": "@@ -1115,24 +1115,26 @@\n k.mostrar()%0A\n+# \n notebook.usa\n@@ -1131,32 +1131,34 @@\n tebook.usar(20)%0A\n+# \n notebook.ligar()\n@@ -1150,32 +1150,34 @@\n otebook.ligar()%0A\n+# \n notebook.usar(20\n@@ -1178,16 +1178,18 @@\n sar(20)%0A\n+# \n notebook\n@@ -1197,32 +1197,34 @@\n mostrarLigado()%0A\n+# \n notebook.desliga\n@@ -1227,16 +1227,18 @@\n ligar()%0A\n+# \n notebook\n@@ -1254,16 +1254,18 @@\n igado()%0A\n+# \n notebook\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-19_18-16-11",
+            "content": "@@ -165,66 +165,8 @@\n one%0A\n-    def mostrarLigado(self):%0A        print(self.__ligado)%0A\n     \n@@ -221,35 +221,8 @@\n alse\n- and self.__bateria == None\n :%0A  \n@@ -265,189 +265,123 @@\n gado\n- e sem bateria')%0A        elif self.__ligado == True and self.__bateria == None:%0A            print('msg: notebook sem bateria')%0A        else:%0A            print('msg: notebook \n+')%0A        else:%0A            print('msg: notebook ligado')%0A    def mostrarLigado(self):%0A        print(self.__\n ligado\n-'\n )%0A  \n@@ -941,17 +941,16 @@\n igado')%0A\n-%0A\n class Ba\n@@ -1082,313 +1082,8 @@\n    %0A\n-    def getcarga(self):%0A        return self.__carga%0A    def getcapacidade(self):%0A        return self.__capacidade%0A    def setcapacidade(self, valor:int):%0A        if valor %3E 0:%0A            self.__capacidade = valor%0A    def setcarga(self, valor:int):%0A        if valor %3E 0:%0A            self.__carga = valor%0A%0A\n note\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-19_18-29-06",
+            "content": "@@ -1,1727 +1,37 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A        self.__bateria: Bateria %7C None = None%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def mostrar(self):%0A        if self.__ligado == False and self.__bateria == None:%0A            print('msg: notebook desligado e sem bateria')%0A        elif self.__ligado == True and self.__bateria == None:%0A            print('msg: notebook sem bateria')%0A        else:%0A            print('msg: notebook ligado')%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            self.__ligado = True%0A            print('msg: notebook ligado')%0A    def desligar(self):%0A        if self.__ligado == True:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A%0Aclass Bateria:%0A    def __init__(self, capacidade):%0A        self.__capacidade: int = capacidade%0A        self.__carga: int = capacidade   %0A    def getcarga(self):%0A        print(self.__carga%0A    def getcapacidade(self):%0A        return self.__capacidade%0A    def setcapacidade(self, valor:int):%0A        if valor %3E 0:%0A            self.__capacidade = valor%0A    def setcarga(self, valor:int):%0A        if valor %3E 0:%0A            self.__carga = valor%0A%0Anotebook = Notebook()%0Anotebook.mostrar()%0Anotebook.usar(20)%0Anotebook.ligar()%0Anotebook.usar(20)%0Anotebook.mostrarLigado()%0Anotebook.desligar()%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0A\n+@@ -1720,45 +1720,4 @@%0A (20)%0A-%250A\n bate\n@@ -47,17 +47,19 @@\n eria(20)\n-%0A\n+%250A\n bateria.\n@@ -68,8 +68,9 @@\n tcarga()\n+%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-19_18-30-59",
+            "content": "@@ -1280,17 +1280,16 @@\n .__carga\n-)\n %0A    def\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-19_18-31-00",
+            "content": "@@ -1,1545 +1,167 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A        self.__bateria: Bateria %7C None = None%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def mostrar(self):%0A        if self.__ligado == False and self.__bateria == None:%0A            print('msg: notebook desligado e sem bateria')%0A        elif self.__ligado == True and self.__bateria == None:%0A            print('msg: notebook sem bateria')%0A        else:%0A            print('msg: notebook ligado')%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            self.__ligado = True%0A            print('msg: notebook ligado')%0A    def desligar(self):%0A        if self.__ligado == True:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A%0Aclass Bateria:%0A    def __init__(self, capacidade):%0A        self.__capacidade: int = capacidade%0A        self.__carga: int = capacidade   %0A    def getcarga(self):%0A        return self.__carga%0A    def getcapacidade(self):%0A        return self.__capacidade%0A    def setcapacidade(self, valor:int):%0A        if valor %3E 0:%0A            self.__capacidade = valor%0A    def setcarga(self, valor:int):%0A        if valor %3E 0:%0A            self.__carga = valor%0A\n+@@ -1254,39 +1254,38 @@%0A (self):%250A        %0A-return %0A+print(%0A self.__carga%250A   %0A@@ -1280,16 +1280,17 @@%0A .__carga%0A+)%0A %250A    def%0A@@ -1537,74 +1537,8 @@%0A alor%0A-%250A\n     \n@@ -178,17 +178,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -212,9 +212,11 @@\n a = \n-%7B\n+%257B\n self\n@@ -227,230 +227,19 @@\n arga\n-%7D'%0A%0Anotebook = Notebook()%0Anotebook.mostrar()%0Anotebook.usar(20)%0Anotebook.ligar()%0Anotebook.usar(20)%0Anotebook.mostrarLigado()%0Anotebook.desligar()%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Abateria = Bateria(20)%0Abateria.getcarga()\n+%257D'%0A %250A%250Ano%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-19_18-32-17",
+            "content": "@@ -1805,22 +1805,16 @@\n ria(20)%0A\n-print(\n bateria.\n@@ -1823,9 +1823,8 @@\n tcarga()\n-)\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-19_18-32-17",
+            "content": "@@ -1,1834 +1,231 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A        self.__bateria: Bateria %7C None = None%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def mostrar(self):%0A        if self.__ligado == False and self.__bateria == None:%0A            print('msg: notebook desligado e sem bateria')%0A        elif self.__ligado == True and self.__bateria == None:%0A            print('msg: notebook sem bateria')%0A        else:%0A            print('msg: notebook ligado')%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            self.__ligado = True%0A            print('msg: notebook ligado')%0A    def desligar(self):%0A        if self.__ligado == True:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A%0Aclass Bateria:%0A    def __init__(self, capacidade):%0A        self.__capacidade: int = capacidade%0A        self.__carga: int = capacidade   %0A    def getcarga(self):%0A        return self.__carga%0A    def getcapacidade(self):%0A        return self.__capacidade%0A    def setcapacidade(self, valor:int):%0A        if valor %3E 0:%0A            self.__capacidade = valor%0A    def setcarga(self, valor:int):%0A        if valor %3E 0:%0A            self.__carga = valor%0A    def __str__(self):%0A        print(f'bateria = %7Bself.__carga%7D)%0A%0Anotebook = Notebook()%0Anotebook.mostrar()%0Anotebook.usar(20)%0Anotebook.ligar()%0Anotebook.usar(20)%0Anotebook.mostrarLigado()%0Anotebook.desligar()%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Abateria = Bateria(20)%0Abateria.getcapacidade()\n+@@ -1565,22 +1565,23 @@%0A         %0A-print(%0A+return %0A f'bateri%0A@@ -1598,17 +1598,17 @@%0A __carga%257D%0A-)%0A+'%0A %250A%250Anotebo%0A@@ -1801,24 +1801,30 @@%0A Bateria(20)%250A%0A+print(%0A bateria.getc%0A@@ -1828,14 +1828,10 @@%0A etca%0A-pacidade%0A+rga%0A ()%0A+)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-19_18-33-04",
+            "content": "@@ -1817,13 +1817,18 @@\n ia.getca\n-rga\n+pacidade\n ()\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-19_18-33-04",
+            "content": "@@ -1571,16 +1571,17 @@\n   print(\n+f\n 'bateria\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-19_18-33-30",
+            "content": "@@ -1571,17 +1571,16 @@\n   print(\n-f\n 'bateria\n@@ -1596,17 +1596,16 @@\n __carga%7D\n-'\n )%0A%0Anoteb\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-19_18-33-40",
+            "content": "@@ -1,1771 +1,203 @@\n-class Notebook:%0A    # ligar desligar%0A    # mostrar%0A    # usar%0A    def __init__(self):%0A        self.__ligado: bool = False%0A        self.__bateria: Bateria %7C None = None%0A    def mostrarLigado(self):%0A        print(self.__ligado)%0A    def mostrar(self):%0A        if self.__ligado == False and self.__bateria == None:%0A            print('msg: notebook desligado e sem bateria')%0A        elif self.__ligado == True and self.__bateria == None:%0A            print('msg: notebook sem bateria')%0A        else:%0A            print('msg: notebook ligado')%0A    def setLigado(self, valor):%0A        if isinstance(valor, bool):%0A            self.__ligado = valor%0A    def usar(self, valor: int):%0A        if self.__ligado == False:%0A            print('msg: erro: ligue o notebook primeiro')%0A        else:%0A            print(f'msg: usando por %7Bvalor%7D minutos')%0A    def ligar(self):%0A        if self.__ligado == False:%0A            self.__ligado = True%0A            print('msg: notebook ligado')%0A    def desligar(self):%0A        if self.__ligado == True:%0A            self.__ligado = False%0A            print('msg: notebook desligado')%0A%0Aclass Bateria:%0A    def __init__(self, capacidade):%0A        self.__capacidade: int = capacidade%0A        self.__carga: int = capacidade   %0A    def getcarga(self):%0A        return self.__carga%0A    def getcapacidade(self):%0A        return self.__capacidade%0A    def setcapacidade(self, valor:int):%0A        if valor %3E 0:%0A            self.__capacidade = valor%0A    def setcarga(self, valor:int):%0A        if valor %3E 0:%0A            self.__carga = valor%0A%0Anotebook = Notebook()%0Anotebook.mostrar()%0Anotebook.usar(20)%0Anotebook.ligar()%0Anotebook.usar(20)%0Anotebook.mostrarLigado()%0Anotebook.desligar()%0Anotebook.mostrarLigado()%0Anotebook.usar(20)%0Abateria = Bateria(20)%0Aprint(bateria.getcarga())\n+@@ -1565,23 +1565,22 @@%0A         %0A-return %0A+print(%0A f'bateri%0A@@ -1598,16 +1598,17 @@%0A _carga%257D'%0A+)%0A %250A%250Anotebo%0A@@ -1805,22 +1805,16 @@%0A ria(20)%250A%0A-print(%0A bateria.%0A@@ -1823,9 +1823,8 @@%0A tcarga()%0A-)%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-10-19_18-34-14",
+            "content": "@@ -1537,93 +1537,8 @@\n alor\n-%0A    def __str__(self):%0A        return f%22Bateria(%7Bself.__carga%7D/%7Bself.__capacidade%7D)%22\n %0A%0Ano\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-19_18-37-37",
+            "content": "@@ -760,81 +760,8 @@\n o')%0A\n-        if self.__bateria == None:%0A            print('msg: sem bateria')%0A\n     \n@@ -1820,12 +1820,37 @@\n Bateria(20)%0A\n+print(bateria.getcarga())\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-19_18-41-53",
+            "content": "@@ -764,16 +764,80 @@\n         \n+if self.__bateria == None:%0A            print('msg: sem bateria')\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-19_18-42-05",
+            "content": "@@ -161,17 +161,16 @@\n  = None%0A\n-%0A\n     def \n@@ -215,162 +215,15 @@\n f.__\n-bateria)%0A        print(self.__ligado)%0A    def set_bateria(self):%0A        self.__bateria = bateria%0A    def get_bateria(self):%0A        return self.__bateria\n+ligado)\n %0A   \n@@ -529,17 +529,16 @@\n igado')%0A\n-%0A\n     def \n@@ -623,33 +623,32 @@\n _ligado = valor%0A\n-%0A\n     def usar(sel\n@@ -768,72 +768,8 @@\n     \n-if self.__bateria == None:%0A            print('msg: sem bateria')\n %0A   \n@@ -833,17 +833,16 @@\n nutos')%0A\n-%0A\n     def \n@@ -968,82 +968,8 @@\n o')%0A\n-        if self.__bateria == None:%0A            print('msg: sem bateria')%0A%0A\n     \n@@ -1239,17 +1239,16 @@\n dade   %0A\n-%0A\n     def \n@@ -1291,25 +1291,16 @@\n __carga%0A\n-        %0A\n     def \n@@ -1445,33 +1445,32 @@\n acidade = valor%0A\n-%0A\n     def setcarga\n@@ -1543,17 +1543,16 @@\n = valor%0A\n-%0A\n     def \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-19_18-45-33",
+            "content": "class Notebook:\n    # ligar desligar\n    # mostrar\n    # usar\n    def __init__(self):\n        self.__ligado: bool = False\n        self.__bateria: Bateria | None = None\n\n    def mostrarLigado(self):\n        print(self.__bateria)\n        print(self.__ligado)\n    def set_bateria(self):\n        self.__bateria = bateria\n    def get_bateria(self):\n        return self.__bateria\n    def mostrar(self):\n        if self.__ligado == False and self.__bateria == None:\n            print('msg: notebook desligado e sem bateria')\n        elif self.__ligado == True and self.__bateria == None:\n            print('msg: notebook sem bateria')\n        else:\n            print('msg: notebook ligado')\n\n    def setLigado(self, valor):\n        if isinstance(valor, bool):\n            self.__ligado = valor\n\n    def usar(self, valor: int):\n        if self.__ligado == False:\n            print('msg: erro: ligue o notebook primeiro')\n        if self.__bateria == None:\n            print('msg: sem bateria')\n        else:\n            print(f'msg: usando por {valor} minutos')\n\n    def ligar(self):\n        if self.__ligado == False:\n            self.__ligado = True\n            print('msg: notebook ligado')\n        if self.__bateria == None:\n            print('msg: sem bateria')\n\n    def desligar(self):\n        if self.__ligado == True:\n            self.__ligado = False\n            print('msg: notebook desligado')\n\nclass Bateria:\n    def __init__(self, capacidade):\n        self.__capacidade: int = capacidade\n        self.__carga: int = capacidade   \n\n    def getcarga(self):\n        return self.__carga\n        \n    def getcapacidade(self):\n        return self.__capacidade\n    def setcapacidade(self, valor:int):\n        if valor > 0:\n            self.__capacidade = valor\n\n    def setcarga(self, valor:int):\n        if valor > 0:\n            self.__carga = valor\n\n    def __str__(self):\n        return f\"Bateria({self.__carga}/{self.__capacidade})\"\n\nnotebook = Notebook()\nnotebook.mostrar()\nnotebook.usar(20)\nnotebook.ligar()\nnotebook.usar(20)\nnotebook.mostrarLigado()\nnotebook.desligar()\nnotebook.mostrarLigado()\nnotebook.usar(20)\nbateria = Bateria(20)\n",
+            "lines": "78"
         }
     ]
 }
