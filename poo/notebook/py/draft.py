@@ -1,3 +1,23 @@
+class Bateria:
+    def __init__(self, capacidade):
+        self.__capacidade: int = capacidade # capacidade max
+        self.__carga: int = capacidade   
+
+    def getcarga(self):
+        return self.__carga
+        
+    def getcapacidade(self):
+        return self.__capacidade
+    def setcapacidade(self, valor:int):
+        if valor > 0:
+            self.__capacidade = valor
+
+    def setcarga(self, valor:int):
+        if valor > 0:
+            self.__carga = valor
+
+    def __str__(self):
+        return f"Bateria({self.__carga}/{self.__capacidade})"
 class Notebook:
     # ligar desligar
     # mostrar
@@ -9,17 +29,17 @@ class Notebook:
     def mostrarLigado(self):
         print(self.__bateria)
         print(self.__ligado)
-    def set_bateria(self):
+    def set_bateria(self, bateria):
         self.__bateria = bateria
     def get_bateria(self):
         return self.__bateria
     def mostrar(self):
         if self.__ligado == False and self.__bateria == None:
             print('msg: notebook desligado e sem bateria')
-        elif self.__ligado == True and self.__bateria == None:
-            print('msg: notebook sem bateria')
+        elif self.__ligado == False and self.__bateria != None:
+            print('msg: notebook desligado com bateria')
         else:
-            print('msg: notebook ligado')
+            print(f'msg: notebook ligado com {self.__bateria.getcarga()} de bateria')
 
     def setLigado(self, valor):
         if isinstance(valor, bool):
@@ -39,32 +59,12 @@ class Notebook:
             print('msg: notebook ligado')
         if self.__bateria == None:
             print('msg: sem bateria')
-
+        if self.__bateria <= 0:
+            self.__ligado = False
     def desligar(self):
         if self.__ligado == True:
             self.__ligado = False
             print('msg: notebook desligado')
-
-class Bateria:
-    def __init__(self, capacidade):
-        self.__capacidade: int = capacidade
-        self.__carga: int = capacidade   
-
-    def getcarga(self):
-        return self.__carga
-        
-    def getcapacidade(self):
-        return self.__capacidade
-    def setcapacidade(self, valor:int):
-        if valor > 0:
-            self.__capacidade = valor
-
-    def setcarga(self, valor:int):
-        if valor > 0:
-            self.__carga = valor
-
-    def __str__(self):
-        return f"Bateria({self.__carga}/{self.__capacidade})"
 
 notebook = Notebook()
 notebook.mostrar()
