@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /home/luiza/Documentos/repos/poo-dd-cd-bloco-b-lzcvs/.tko/cache/poo.md
-  cache_timestamp: '2025-10-20 16:03:17'
+  cache_timestamp: '2025-10-21 15:31:48'
   filters:
   - acesso
   - simples
@@ -21,6 +21,7 @@ tasks:
   poo@camisa: '{rate:100, guide:guia_da_atividade, alone:10, study:40}'
   poo@roupa: '{rate:100, alone:10, study:60}'
   poo@relogio: '{rate:100, iagen:deepseek, alone:9, study:120}'
+  poo@motoca: '{rate:60}'
 flags:
   quests: 0
   tracks: 0
