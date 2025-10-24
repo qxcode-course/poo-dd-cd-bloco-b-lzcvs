@@ -54,7 +54,8 @@ class Moto:
             return time
         self.__time -= time
     def honk(self):
-        
+        valor = int(self.__potencia)
+        print('P' + 'e' * valor + 'm') 
 def main():
     moto = Moto(1)
 
@@ -84,5 +85,6 @@ def main():
             tempo = int(args[1])
             moto.drive(tempo)
         elif args[0] == 'honk':
+            
             moto.honk()
 main()
