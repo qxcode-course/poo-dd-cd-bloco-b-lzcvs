@@ -1,0 +1,569 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_14-48-53",
+            "content": "@@ -1,12 +1,31 @@\n+@@ -1,692 +0,0 @@%0A-\n class Grafit\n@@ -26,17 +26,19 @@\n Grafite:\n-%0A\n+%250A\n     def \n@@ -61,17 +61,19 @@\n ze:int):\n-%0A\n+%250A\n         \n@@ -90,17 +90,19 @@\n e = size\n-%0A\n+%250A\n class La\n@@ -109,17 +109,19 @@\n piseira:\n-%0A\n+%250A\n     def \n@@ -140,17 +140,19 @@\n f, tip):\n-%0A\n+%250A\n         \n@@ -172,14 +172,18 @@\n None\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     \n@@ -204,24 +204,28 @@\n (self) -\n-%3E\n+%253E\n  bool:\n-%0A\n+%250A\n         \n@@ -247,17 +247,19 @@\n =  None:\n-%0A\n+%250A\n         \n@@ -273,18 +273,22 @@\n urn True\n-%0A%0A\n+%250A%250A\n     def \n@@ -324,16 +324,20 @@\n e) -\n-%3E\n+%253E\n  bool:\n-%0A\n+%250A\n     \n@@ -360,17 +360,19 @@\n  grafite\n-%0A\n+%250A\n         \n@@ -382,18 +382,22 @@\n urn True\n-%0A%0A\n+%250A%250A\n def main\n@@ -399,17 +399,19 @@\n  main():\n-%0A\n+%250A\n     poli\n@@ -422,25 +422,27 @@\n Grafite(' ')\n-%0A\n+%250A\n     while Tr\n@@ -445,17 +445,19 @@\n e True: \n-%0A\n+%250A\n         \n@@ -475,17 +475,19 @@\n  input()\n-%0A\n+%250A\n         \n@@ -500,13 +500,17 @@\n list\n-%5Bstr%5D\n+%255Bstr%255D\n  = l\n@@ -522,17 +522,19 @@\n lit(' ')\n-%0A\n+%250A\n         \n@@ -555,10 +555,14 @@\n ine)\n-%0A%0A\n+%250A%250A\n     \n@@ -572,21 +572,24 @@\n  if args\n-%5B0%5D =\n+%255B0%255D \n = 'end':\n@@ -589,17 +589,19 @@\n  'end': \n-%0A\n+%250A\n         \n@@ -609,17 +609,19 @@\n    break\n-%0A\n+%250A\n         \n@@ -629,21 +629,24 @@\n lif args\n-%5B0%5D =\n+%255B0%255D \n = 'init'\n@@ -646,17 +646,19 @@\n  'init':\n-%0A\n+%250A\n         \n@@ -676,12 +676,18 @@\n args\n-%5B0%5D%0A\n+%255B0%255D%250A\n     \n@@ -713,17 +713,19 @@\n ir(size)\n-%0A\n+%250A\n         \n@@ -737,11 +737,15 @@\n args\n-%5B0%5D\n+%255B0%255D\n  = '\n@@ -750,17 +750,19 @@\n  'show':\n-%0A\n+%250A\n         \n@@ -781,11 +781,14 @@\n lis)\n-%0A\n+%250A\n main()\n+%0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-25_15-08-26",
+            "content": "@@ -647,17 +647,16 @@\n rgs%5B0%5D =\n-=\n  'show':\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-25_15-08-41",
+            "content": "@@ -262,17 +262,17 @@\n lf, \n-g\n+G\n rafite: \n Graf\n@@ -267,17 +267,17 @@\n rafite: \n-G\n+g\n rafite) \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-25_15-08-55",
+            "content": "@@ -449,17 +449,16 @@\n = line.s\n-p\n lit(' ')\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-25_15-09-08",
+            "content": "@@ -359,25 +359,23 @@\n polis = \n-Lapiseira\n+Grafite\n (' ')%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-25_15-09-41",
+            "content": "@@ -338,101 +338,8 @@\n rue%0A\n-    def __str__(self) -%3E str:%0A        return f'calibre: %7Bself.__size%7D, grafite: %7Bself.__tip%7D'\n %0Adef\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-25_15-11-07",
+            "content": "@@ -1,872 +1,68 @@\n-class Grafite:%0A    def __init__(self,size:int):%0A        self.__size = size%0A    def getSize(self):%0A        return self.__size%0Aclass Lapiseira:%0A    def __init__(self, tip):%0A        self.__tip = None%0A        self.__size: Grafite = size%0A    def temGrafite(self) -%3E bool:%0A        if self.__tip !=  None:%0A            return True%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        self.__tip = grafite%0A        return True%0A    def __str__(self) -%3E str:%0A        return f'calibre: %7Bself.__size%7D, grafite: %7Bself.__tip%7D'%0Adef main():%0A    polis = Lapiseira(' ')%0A    while True: %0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end': %0A            break%0A        elif args%5B0%5D == 'init':%0A            size = args%5B0%5D%0A            polis.inserir(\n+@@ -148,39 +148,8 @@%0A     %0A-    self.__size: Grafite = \n size\n-)\n %0A \n-       elif args%5B0%5D == 'show':%0A            print(polis)%0Amain()\n+%250A   %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-25_15-13-21",
+            "content": "@@ -205,22 +205,19 @@\n  self.__\n-grafit\n+siz\n e: Grafi\n@@ -221,22 +221,19 @@\n afite = \n-Grafit\n+siz\n e%0A    de\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_15-15-09",
+            "content": "@@ -485,22 +485,19 @@\n %7Bself.__\n-grafit\n+siz\n e%7D, graf\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_15-15-27",
+            "content": "@@ -780,9 +780,9 @@\n rgs%5B\n-1\n+0\n %5D%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_15-15-47",
+            "content": "@@ -768,44 +768,11 @@\n     \n-calibre = args%5B1%5D%0A            grafit\n+siz\n e = \n@@ -780,9 +780,9 @@\n rgs%5B\n-2\n+1\n %5D%0A  \n@@ -805,22 +805,19 @@\n inserir(\n-calibr\n+siz\n e)%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_15-18-39",
+            "content": "@@ -845,25 +845,16 @@\n (calibre\n-, grafite\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_15-18-39",
+            "content": "@@ -782,16 +782,46 @@\n args%5B1%5D%0A\n+            grafite = args%5B2%5D%0A\n         \n@@ -845,16 +845,25 @@\n (calibre\n+, grafite\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_15-18-53",
+            "content": "@@ -485,19 +485,23 @@\n %7Bself.__\n-tip\n+grafite\n %7D, grafi\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_15-19-44",
+            "content": "@@ -189,12 +189,12 @@\n p = \n-null\n+None\n %0A   \n@@ -232,17 +232,16 @@\n Grafite%0A\n-%0A\n     def \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_15-20-39",
+            "content": "@@ -185,20 +185,20 @@\n __tip = \n-None\n+null\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_15-21-02",
+            "content": "@@ -256,34 +256,16 @@\n ite(self\n-, grafite: Grafite\n ) -%3E boo\n@@ -326,37 +326,8 @@\n True\n-%0A        self.__tip = grafite\n %0A%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_15-21-59",
+            "content": "@@ -533,23 +533,19 @@\n %7Bself.__\n-grafite\n+tip\n %7D, grafi\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_15-23-55",
+            "content": "@@ -533,19 +533,23 @@\n %7Bself.__\n-tip\n+grafite\n %7D, grafi\n@@ -560,23 +560,19 @@\n %7Bself.__\n-grafite\n+tip\n %7D'%0Adef m\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_15-24-06",
+            "content": "@@ -122,72 +122,8 @@\n ize%0A\n-    def __str__(self):%0A        return f'grafite: %7Bself.__size%7D'%0A\n clas\n@@ -179,23 +179,19 @@\n  self.__\n-calibre\n+tip\n  = None%0A\n@@ -212,22 +212,34 @@\n _grafite\n- = Non\n+: Grafite = Grafit\n e%0A%0A    d\n@@ -258,22 +258,31 @@\n e(self, \n-calibr\n+grafite: Grafit\n e) -%3E bo\n@@ -297,31 +297,83 @@\n     \n+if \n self.__\n-calibre = calibr\n+tip !=  None:%0A            return True%0A        self.__tip = grafit\n e%0A%0A \n@@ -432,82 +432,18 @@\n     \n-if \n self.__\n-calibre == None:%0A            return False%0A        self.__calibre\n+tip\n  = g\n@@ -533,23 +533,19 @@\n %7Bself.__\n-calibre\n+tip\n %7D, grafi\n@@ -600,16 +600,19 @@\n piseira(\n+' '\n )%0A    wh\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_15-29-29",
+            "content": "@@ -663,19 +663,16 @@\n piseira(\n-' '\n )%0A    wh\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-29-45",
+            "content": "@@ -283,26 +283,19 @@\n afite = \n-self.__siz\n+Non\n e%0A%0A    d\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-30-04",
+            "content": "@@ -283,16 +283,27 @@\n afite = \n+self.__size\n %0A%0A    de\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-30-23",
+            "content": "@@ -283,19 +283,16 @@\n afite = \n-tip\n %0A%0A    de\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-30-23",
+            "content": "@@ -283,20 +283,19 @@\n afite = \n-None\n+tip\n %0A%0A    de\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-30-37",
+            "content": "@@ -254,21 +254,15 @@\n ibre\n-: Grafite = g\n+ = None\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-31-29",
+            "content": "@@ -262,27 +262,17 @@\n afite = \n-self.__size\n+g\n %0A       \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-31-29",
+            "content": "@@ -262,16 +262,27 @@\n afite = \n+self.__size\n %0A       \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-32-03",
+            "content": "@@ -258,31 +258,24 @@\n : Grafite = \n-grafite\n %0A        sel\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-32-04",
+            "content": "@@ -250,16 +250,58 @@\n _calibre\n+: Grafite = grafite%0A        self.__grafite\n  = None%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_15-35-30",
+            "content": "@@ -1,313 +1,34 @@\n-class Grafite:%0A    def __init__(self,size:int):%0A        self.__size = size%0A    def getSize(self):%0A        return self.__size%0A    def __str__(self):%0A        return f'grafite: %7Bself.__size%7D'%0Aclass Lapiseira:%0A    def __init__(self, tip):%0A        self.__calibre = None%0A%0A    def temGrafite(self, calibre) -%3E bool:%0A\n+@@ -306,88 +306,8 @@%0A ol:%250A%0A-\n     \n@@ -49,33 +49,35 @@\n calibre == None:\n-%0A\n+%250A\n             retu\n@@ -79,25 +79,27 @@\n  return True\n-%0A\n+%250A\n         retu\n@@ -110,664 +110,14 @@\n alse\n-%0A        self.__calibre = calibre%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        if self.__calibre == None:%0A            return False%0A        self.__calibre = grafite%0A        return True%0A    def __str__(self) -%3E str:%0A        return f'calibre: %7Bself.__calibre%7D, grafite: %7Bself.__grafite%7D'%0Adef main():%0A    polis = Lapiseira(' ')%0A    while True: %0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end': %0A            break%0A        elif args%5B0%5D == 'init':%0A            calibre = args%5B1%5D%0A            polis.inserir(calibre)%0A        elif args%5B0%5D == 'show':%0A            print(polis)%0Amain()\n+%250A%0A     %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-25_15-36-46",
+            "content": "@@ -651,17 +651,43 @@\n alibre%7D,\n-%0A\n+ grafite: %7Bself.__grafite%7D'\n %0Adef mai\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-25_15-37-03",
+            "content": "@@ -650,17 +650,17 @@\n calibre%7D\n-'\n+,\n %0A%0Adef ma\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_15-37-08",
+            "content": "@@ -222,23 +222,19 @@\n _(self, \n-calibre\n+tip\n ):%0A     \n@@ -256,41 +256,8 @@\n re =\n- calibre%0A        self.__grafite =\n  Non\n@@ -415,16 +415,17 @@\n calibre%0A\n+%0A\n     def \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_15-38-14",
+            "content": "@@ -690,28 +690,8 @@\n bre%7D\n-, grafite: %7Bself.__%7D\n '%0A%0Ad\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_15-38-31",
+            "content": "@@ -705,23 +705,16 @@\n %7Bself.__\n-grafite\n %7D'%0A%0Adef \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_15-38-31",
+            "content": "@@ -648,138 +648,8 @@\n tr:%0A\n-        if self.__grafite == None:%0A            estado = 'null'%0A            return f'calibre: %7Bself.__calibre%7D, grafite: %7Bestado%7D'%0A\n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-25_15-39-29",
+            "content": "@@ -618,14 +618,8 @@\n rue%0A\n-    %0A%0A\n     \n@@ -1128,26 +1128,23 @@\n   polis.\n-temGrafite\n+inserir\n (calibre\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-25_15-43-19",
+            "content": "@@ -402,41 +402,8 @@\n rue%0A\n-        self.__calibre = grafite%0A\n     \n@@ -419,17 +419,16 @@\n n False%0A\n-%0A\n         \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_15-43-46",
+            "content": "@@ -317,39 +317,30 @@\n afite(self, \n-grafite: Grafit\n+calibr\n e) -%3E bool:%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-25_15-43-48",
+            "content": "@@ -394,36 +394,35 @@\n          return \n-Fals\n+Tru\n e%0A        self._\n@@ -447,36 +447,38 @@\n %0A        return \n-True\n+False%0A\n %0A        self.__\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-25_15-44-02",
+            "content": "@@ -461,22 +461,52 @@\n rn True%0A\n+        self.__calibre = calibre\n %0A   \n- #\n  def ins\n@@ -542,26 +542,24 @@\n -%3E bool:%0A   \n- #\n      if self\n@@ -577,26 +577,24 @@\n == None:%0A   \n- #\n          ret\n@@ -602,26 +602,24 @@\n rn False%0A   \n- #\n      self.__\n@@ -643,10 +643,8 @@\n %0A   \n- #\n     \n@@ -661,16 +661,17 @@\n ue%0A    %0A\n+%0A\n     def \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-25_15-44-32",
+            "content": "@@ -461,24 +461,26 @@\n rn True%0A%0A   \n+ #\n  def inserir\n@@ -508,32 +508,34 @@\n te) -%3E bool:%0A   \n+ #\n      if self.__c\n@@ -545,31 +545,30 @@\n bre \n-%3E grafit\n+== Non\n e:%0A    \n+#\n         \n prin\n@@ -567,43 +567,78 @@\n     \n-print('fail: tamanho incompativel')\n+ return False%0A    #     self.__calibre = grafite%0A    #     return True\n %0A   \n@@ -1234,77 +1234,8 @@\n is)%0A\n-        elif args%5B0%5D == 'insert':%0A            polis.inserir(calibre)%0A\n main\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_15-46-46",
+            "content": "@@ -525,18 +525,8 @@\n   if\n- grafite %3E\n  sel\n@@ -536,16 +536,26 @@\n _calibre\n+ %3E grafite\n :%0A      \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_15-47-18",
+            "content": "@@ -34,42 +34,8 @@\n elf,\n- thickness: float, hardness: str, \n size\n@@ -76,389 +76,115 @@\n     \n-    self.__thickness = thickness%0A        self.__hardness = hardness%0A%0A    def getthickness(self):%0A        return self.__thickness%0A    def gethardness(self):%0A        return self.__hardness%0A    def getSize(self):%0A        return self.__size%0A    def thickness(self):%0A        return self.__thickness%0A    def __str__(self):%0A        return f'%7Bself.__size%7D:%7Bself.__hardness%7D:%7Bself.thickness\n+def getSize(self):%0A        return self.__size%0A    def __str__(self):%0A        return f'grafite: %7Bself.__size\n %7D'%0Ac\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-25_15-55-35",
+            "content": "@@ -166,32 +166,33 @@\n ness = hardness%0A\n+%0A\n     def getthick\n@@ -576,18 +576,8 @@\n ibre\n- # tamanho\n %0A   \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-25_15-57-20",
+            "content": "@@ -839,29 +839,22 @@\n      if \n-self.__calibr\n+grafit\n e %3E self\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_15-57-34",
+            "content": "@@ -846,25 +846,23 @@\n  self.__\n-thickness\n+calibre\n  %3E self.\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_15-58-01",
+            "content": "@@ -843,19 +843,15 @@\n  if \n-grafite.get\n+self.__\n thic\n@@ -855,18 +855,16 @@\n hickness\n-()\n  %3E self.\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_15-59-11",
+            "content": "@@ -787,51 +787,52 @@\n     \n-        # Comparar calibres - AGORA CORRETO\n+def inserir(self, grafite: Grafite) -%3E bool:\n %0A   \n@@ -850,17 +850,17 @@\n fite.get\n-T\n+t\n hickness\n@@ -866,10 +866,9 @@\n s() \n-!=\n+%3E\n  sel\n@@ -905,23 +905,23 @@\n ('fail: \n-calibre\n+tamanho\n  incompa\n@@ -936,118 +936,8 @@\n     \n-        return False%0A        %0A        # Inserir o grafite%0A        self.__grafite = grafite%0A        return True\n %0A   \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_16-00-17",
+            "content": "@@ -787,53 +787,51 @@\n     \n-def inserir(self, grafite: Grafite) -%3E bool:%0A\n+        # Comparar calibres - AGORA CORRETO\n %0A   \n@@ -888,28 +888,24 @@\n             \n-    \n print('fail:\n@@ -932,36 +932,32 @@\n l')%0A            \n-    \n return False%0A   \n@@ -961,20 +961,16 @@\n         \n-    \n %0A       \n@@ -970,20 +970,16 @@\n         \n-    \n # Inseri\n@@ -982,36 +982,32 @@\n serir o grafite%0A\n-    \n         self.__g\n@@ -1019,28 +1019,24 @@\n e = grafite%0A\n-    \n         retu\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-25_16-01-23",
+            "content": "@@ -1008,32 +1008,36 @@\n grafite%0A        \n+    \n self.__grafite =\n@@ -1037,32 +1037,36 @@\n afite = grafite%0A\n+    \n         return T\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-25_16-01-33",
+            "content": "@@ -568,22 +568,15 @@\n e = \n-float(\n calibre\n-)\n  # t\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-25_16-01-55",
+            "content": "@@ -1334,16 +1334,19 @@\n piseira(\n+' '\n )%0A    wh\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-25_16-02-05",
+            "content": "@@ -1,12 +1,33 @@\n+@@ -1,1729 +1,63 @@%0A-\n class Grafit\n@@ -28,17 +28,19 @@\n Grafite:\n-%0A\n+%250A\n     def \n@@ -97,17 +97,19 @@\n ze:int):\n-%0A\n+%250A\n         \n@@ -122,25 +122,27 @@\n _size = size\n-%0A\n+%250A\n         self\n@@ -161,25 +161,27 @@\n  = thickness\n-%0A\n+%250A\n         self\n@@ -194,33 +194,35 @@\n dness = hardness\n-%0A\n+%250A\n     def getthick\n@@ -224,33 +224,35 @@\n thickness(self):\n-%0A\n+%250A\n         return s\n@@ -258,33 +258,35 @@\n self.__thickness\n-%0A\n+%250A\n     def gethardn\n@@ -287,33 +287,35 @@\n thardness(self):\n-%0A\n+%250A\n         return s\n@@ -324,25 +324,27 @@\n f.__hardness\n-%0A\n+%250A\n     def getS\n@@ -349,25 +349,27 @@\n tSize(self):\n-%0A\n+%250A\n         retu\n@@ -382,17 +382,19 @@\n f.__size\n-%0A\n+%250A\n     def \n@@ -405,25 +405,27 @@\n kness(self):\n-%0A\n+%250A\n         retu\n@@ -443,17 +443,19 @@\n hickness\n-%0A\n+%250A\n     def \n@@ -460,33 +460,35 @@\n f __str__(self):\n-%0A\n+%250A\n         return f\n@@ -488,17 +488,19 @@\n eturn f'\n-%7B\n+%257B\n self.__s\n@@ -502,19 +502,23 @@\n f.__size\n-%7D:%7B\n+%257D:%257B\n self.__h\n@@ -528,11 +528,15 @@\n ness\n-%7D:%7B\n+%257D:%257B\n self\n@@ -545,19 +545,23 @@\n hickness\n-%7D'%0A\n+%257D'%250A\n class La\n@@ -568,17 +568,19 @@\n piseira:\n-%0A\n+%250A\n     def \n@@ -594,17 +594,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -646,17 +646,19 @@\n  tamanho\n-%0A\n+%250A\n         \n@@ -678,18 +678,22 @@\n e = None\n-%0A%0A\n+%250A%250A\n     def \n@@ -728,24 +728,28 @@\n afite) -\n-%3E\n+%253E\n  bool:\n-%0A\n+%250A\n         \n@@ -766,33 +766,35 @@\n calibre == None:\n-%0A\n+%250A\n             retu\n@@ -793,33 +793,35 @@\n     return False\n-%0A\n+%250A\n         self.__c\n@@ -828,33 +828,35 @@\n alibre = grafite\n-%0A\n+%250A\n         return T\n@@ -858,18 +858,22 @@\n urn True\n-%0A%0A\n+%250A%250A\n     def \n@@ -909,17 +909,23 @@\n e) -\n-%3E\n+%253E\n  bool:\n-%0A%0A\n+%250A%250A\n     \n@@ -972,17 +972,19 @@\n calibre:\n-%0A\n+%250A\n         \n@@ -1026,17 +1026,19 @@\n ativel')\n-%0A\n+%250A\n         \n@@ -1057,17 +1057,19 @@\n rn False\n-%0A\n+%250A\n         \n@@ -1072,17 +1072,19 @@\n         \n-%0A\n+%250A\n         \n@@ -1098,33 +1098,35 @@\n nserir o grafite\n-%0A\n+%250A\n         self.__g\n@@ -1141,17 +1141,19 @@\n  grafite\n-%0A\n+%250A\n         \n@@ -1163,17 +1163,19 @@\n urn True\n-%0A\n+%250A\n     def \n@@ -1193,15 +1193,19 @@\n f) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -1234,17 +1234,19 @@\n == None:\n-%0A\n+%250A\n         \n@@ -1264,17 +1264,19 @@\n = 'null'\n-%0A\n+%250A\n         \n@@ -1289,33 +1289,35 @@\n turn f'calibre: \n-%7B\n+%257B\n self.__calibre%7D,\n@@ -1306,33 +1306,35 @@\n 7Bself.__calibre\n-%7D\n+%257D\n , grafite: %7Besta\n@@ -1332,18 +1332,24 @@\n te: \n-%7B\n+%257B\n estado\n-%7D'%0A\n+%257D'%250A\n     \n@@ -1370,17 +1370,19 @@\n alibre: \n-%7B\n+%257B\n self.__c\n@@ -1387,17 +1387,19 @@\n _calibre\n-%7D\n+%257D\n , grafit\n@@ -1405,9 +1405,11 @@\n te: \n-%7B\n+%257B\n self\n@@ -1422,12 +1422,18 @@\n fite\n-%7D'%0A%0A\n+%257D'%250A%250A\n def \n@@ -1439,17 +1439,19 @@\n  main():\n-%0A\n+%250A\n     poli\n@@ -1465,17 +1465,19 @@\n iseira()\n-%0A\n+%250A\n     whil\n@@ -1484,17 +1484,19 @@\n e True: \n-%0A\n+%250A\n         \n@@ -1514,17 +1514,19 @@\n  input()\n-%0A\n+%250A\n         \n@@ -1539,13 +1539,17 @@\n list\n-%5Bstr%5D\n+%255Bstr%255D\n  = l\n@@ -1562,17 +1562,19 @@\n lit(' ')\n-%0A\n+%250A\n         \n@@ -1595,10 +1595,14 @@\n ine)\n-%0A%0A\n+%250A%250A\n     \n@@ -1608,27 +1608,31 @@\n      if args\n-%5B0%5D\n+%255B0%255D\n  == 'end': %0A\n@@ -1630,17 +1630,19 @@\n  'end': \n-%0A\n+%250A\n         \n@@ -1650,17 +1650,19 @@\n    break\n-%0A\n+%250A\n         \n@@ -1666,27 +1666,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'init':%0A\n@@ -1688,17 +1688,19 @@\n  'init':\n-%0A\n+%250A\n         \n@@ -1721,12 +1721,18 @@\n args\n-%5B1%5D%0A\n+%255B1%255D%250A\n     \n@@ -1764,17 +1764,19 @@\n calibre)\n-%0A\n+%250A\n         \n@@ -1780,27 +1780,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'show':%0A\n@@ -1802,17 +1802,19 @@\n  'show':\n-%0A\n+%250A\n         \n@@ -1829,17 +1829,19 @@\n t(polis)\n-%0A\n+%250A\n         \n@@ -1853,11 +1853,15 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n@@ -1869,17 +1869,19 @@\n insert':\n-%0A\n+%250A\n         \n@@ -1910,11 +1910,89 @@\n bre)\n-%0A\n+%250A\n main()\n+%0A+@@ -523,24 +523,33 @@%250A _init__(self%250A+, calibre%250A ):%25250A        s%250A%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-25_16-02-25",
+            "content": "@@ -1329,11 +1329,8 @@\n ira(\n-0.5\n )%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-25_16-02-38",
+            "content": "@@ -1,1730 +1,50 @@\n-class Grafite:%0A    def __init__(self, thickness: float, hardness: str, size:int):%0A        self.__size = size%0A        self.__thickness = thickness%0A        self.__hardness = hardness%0A    def getthickness(self):%0A        return self.__thickness%0A    def gethardness(self):%0A        return self.__hardness%0A    def getSize(self):%0A        return self.__size%0A    def thickness(self):%0A        return self.__thickness%0A    def __str__(self):%0A        return f'%7Bself.__size%7D:%7Bself.__hardness%7D:%7Bself.thickness%7D'%0Aclass Lapiseira:%0A    def __init__(self):%0A        self.__calibre = float(calibre) # tamanho%0A        self.__grafite = None%0A%0A    def temGrafite(self, grafite: Grafite) -%3E bool:%0A        if self.__calibre == None:%0A            return False%0A        self.__calibre = grafite%0A        return True%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A%0A        if grafite.getThickness() != self.__calibre:%0A                print('fail: calibre incompativel')%0A                return False%0A            %0A            # Inserir o grafite%0A        self.__grafite = grafite%0A        return True%0A    def __str__(self) -%3E str:%0A        if self.__grafite == None:%0A            estado = 'null'%0A            return f'calibre: %7Bself.__calibre%7D, grafite: %7Bestado%7D'%0A        return f'calibre: %7Bself.__calibre%7D, grafite: %7Bself.__grafite%7D'%0A%0Adef main():%0A    polis = Lapiseira(0)%0A    while True: %0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end': %0A            break%0A        elif args%5B0%5D == 'init':%0A            calibre = args%5B1%5D%0A            polis.temGrafite(calibre)%0A        elif args%5B0%5D == 'show':%0A            print(polis)%0A        elif args%5B0%5D == 'insert':%0A            polis.inserir(calibre)%0Amain()\n+@@ -1326,16 +1326,18 @@%0A iseira(0%0A+.5%0A )%250A    wh%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-25_16-02-45",
+            "content": "@@ -69,17 +69,16 @@\n r, size:\n- \n int):%0A  \n@@ -166,37 +166,32 @@\n ness = hardness%0A\n-    %0A\n     def getThick\n@@ -185,17 +185,17 @@\n  def get\n-T\n+t\n hickness\n@@ -230,29 +230,24 @@\n __thickness%0A\n-    %0A\n     def getH\n@@ -249,9 +249,9 @@\n  get\n-H\n+h\n ardn\n@@ -292,21 +292,16 @@\n ardness%0A\n-    %0A\n     def \n@@ -342,24 +342,76 @@\n .__size%0A    \n+def thickness(self):%0A        return self.__thickness\n %0A    def __s\n@@ -447,25 +447,20 @@\n %7Bself.__\n-thickness\n+size\n %7D:%7Bself.\n@@ -481,18 +481,20 @@\n elf.\n-__size\n+thickness\n %7D'%0A\n-%0A\n clas\n@@ -531,17 +531,8 @@\n self\n-, calibre\n ):%0A \n@@ -573,47 +573,17 @@\n bre)\n- \n  # \n-Converter para float para compara%C3%A7%C3%A3\n+tamanh\n o%0A  \n@@ -638,72 +638,36 @@\n self\n-) -%3E bool:%0A        %22%22%22Verifica se j%C3%A1 tem grafite na lapiseira%22%22%22\n+, grafite: Grafite) -%3E bool:\n %0A   \n@@ -671,30 +671,26 @@\n         \n-return\n+if\n  self.__\n grafite \n@@ -685,114 +685,48 @@\n f.__\n-grafite is not\n+calibre ==\n  None\n-%0A\n+:\n %0A    \n-def inserir(self, grafite: Grafite) -%3E bool:%0A        # Verificar se j%C3%A1 tem grafit\n+        return Fals\n e%0A  \n@@ -735,152 +735,103 @@\n     \n-if \n self.\n-temGrafite():%0A            print('fail: ja existe grafite')%0A            return False%0A        %0A        # Comparar calibres - AGORA CORRETO\n+__calibre = grafite%0A        return True%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A\n %0A   \n@@ -888,24 +888,28 @@\n             \n+   \n+ \n print('fail:\n@@ -936,32 +936,36 @@\n l')%0A            \n+    \n return False%0A   \n@@ -965,25 +965,33 @@\n lse%0A        \n-%0A\n+    %0A    \n         # In\n@@ -1059,21 +1059,16 @@\n rn True%0A\n-    %0A\n     def \n@@ -1119,17 +1119,45 @@\n ite \n-is\n+==\n  None:%0A\n+            estado = 'null'%0A\n     \n@@ -1209,20 +1209,24 @@\n rafite: \n-None\n+%7Bestado%7D\n '%0A      \n@@ -1330,53 +1330,9 @@\n ra(0\n-.5)  # Inicializar com um calibre padr%C3%A3o%0A    \n+)\n %0A   \n@@ -1357,16 +1357,21 @@\n     line\n+: str\n  = input\n@@ -1385,16 +1385,27 @@\n     args\n+: list%5Bstr%5D\n  = line.\n@@ -1410,16 +1410,19 @@\n e.split(\n+' '\n )%0A      \n@@ -1436,15 +1436,16 @@\n (f'$\n-%7B\n+' + \n line\n-%7D'\n )%0A%0A \n@@ -1549,109 +1549,53 @@\n e = \n-float(\n args%5B1%5D\n-)  # Converter para float%0A            polis = Lapiseira(calibre)  # Criar nova lapiseira\n+%0A            polis.temGrafite(calibre)\n %0A   \n@@ -1698,344 +1698,29 @@\n     \n-if len(args) %3E= 3:%0A                thickness = float(args%5B1%5D)%0A                hardness = args%5B2%5D%0A                size = 100  # Tamanho padr%C3%A3o%0A                grafite = Grafite(thickness, hardness, size)%0A                polis.inserir(grafite)%0A            else:%0A                print(%22fail: comando insert precisa de thickness e hardness%22\n+polis.inserir(calibre\n )%0Ama\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-25_16-03-15",
+            "content": "@@ -69,16 +69,17 @@\n r, size:\n+ \n int):%0A  \n@@ -175,16 +175,20 @@\n ardness%0A\n+    \n %0A    def\n@@ -191,17 +191,17 @@\n  def get\n-t\n+T\n hickness\n@@ -232,32 +232,37 @@\n elf.__thickness%0A\n+    %0A\n     def gethardn\n@@ -256,17 +256,17 @@\n  def get\n-h\n+H\n ardness(\n@@ -299,24 +299,29 @@\n .__hardness%0A\n+    %0A\n     def getS\n@@ -366,60 +366,8 @@\n     \n-def thickness(self):%0A        return self.__thickness\n %0A   \n@@ -411,20 +411,25 @@\n %7Bself.__\n-size\n+thickness\n %7D:%7Bself.\n@@ -450,20 +450,18 @@\n elf.\n-thickness\n+__size\n %7D'%0A\n+%0A\n clas\n@@ -531,23 +531,70 @@\n libre = \n+float(\n calibre\n+)  # Converter para float para compara%C3%A7%C3%A3o\n %0A       \n@@ -644,36 +644,72 @@\n self\n-, grafite: Grafite) -%3E bool:\n+) -%3E bool:%0A        %22%22%22Verifica se j%C3%A1 tem grafite na lapiseira%22%22%22\n %0A   \n@@ -713,26 +713,30 @@\n         \n-if\n+return\n  self.__\n calibre \n@@ -731,48 +731,114 @@\n f.__\n-calibre ==\n+grafite is not\n  None\n-:\n+%0A\n %0A    \n-        return Fals\n+def inserir(self, grafite: Grafite) -%3E bool:%0A        # Verificar se j%C3%A1 tem grafit\n e%0A  \n@@ -847,32 +847,72 @@\n     \n+if \n self.\n-__calibre =\n+temGrafite():%0A            print('fail: ja existe\n  grafite\n %0A   \n@@ -899,33 +899,39 @@\n a existe grafite\n-%0A\n+')%0A    \n         return T\n@@ -933,62 +933,66 @@\n urn \n-True%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:\n+False%0A        %0A        # Comparar calibres - AGORA CORRETO\n %0A   \n@@ -1010,10 +1010,26 @@\n fite\n- %3E\n+.getThickness() !=\n  sel\n@@ -1070,15 +1070,15 @@\n il: \n-tamanho\n+calibre\n  inc\n@@ -1089,16 +1089,131 @@\n tivel')%0A\n+            return False%0A        %0A        # Inserir o grafite%0A        self.__grafite = grafite%0A        return True%0A\n     %0A   \n@@ -1269,45 +1269,17 @@\n ite \n-==\n+is\n  None:%0A\n-            estado = 'null'%0A\n     \n@@ -1335,16 +1335,12 @@\n te: \n-%7Bestado%7D\n+None\n '%0A  \n@@ -1443,20 +1443,62 @@\n piseira(\n-' ')\n+0.5)  # Inicializar com um calibre padr%C3%A3o%0A    \n %0A    whi\n@@ -1519,21 +1519,16 @@\n     line\n-: str\n  = input\n@@ -1546,19 +1546,8 @@\n args\n-: list%5Bstr%5D\n  = l\n@@ -1560,11 +1560,8 @@\n lit(\n-' '\n )%0A  \n@@ -1579,16 +1579,15 @@\n (f'$\n-' + \n+%7B\n line\n+%7D'\n )%0A%0A \n@@ -1691,53 +1691,109 @@\n e = \n+float(\n args%5B1%5D\n-%0A            polis.temGrafite(calibre)\n+)  # Converter para float%0A            polis = Lapiseira(calibre)  # Criar nova lapiseira\n %0A   \n@@ -1896,29 +1896,344 @@\n     \n-polis.inserir(calibre\n+if len(args) %3E= 3:%0A                thickness = float(args%5B1%5D)%0A                hardness = args%5B2%5D%0A                size = 100  # Tamanho padr%C3%A3o%0A                grafite = Grafite(thickness, hardness, size)%0A                polis.inserir(grafite)%0A            else:%0A                print(%22fail: comando insert precisa de thickness e hardness%22\n )%0Ama\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_16-04-17",
+            "content": "@@ -623,24 +623,42 @@\n Grafite(self\n+, grafite: Grafite\n ) -%3E bool:%0A \n@@ -668,40 +668,111 @@\n     \n-return self.__grafite is not Non\n+if self.__calibre == None:%0A            return False%0A        self.__calibre = grafite%0A        return Tru\n e%0A%0A \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-25_16-06-35",
+            "content": "@@ -752,26 +752,10 @@\n fite\n-.getthickness() !=\n+ %3E\n  sel\n@@ -792,23 +792,23 @@\n ('fail: \n-calibre\n+tamanho\n  incompa\n@@ -812,9 +812,9 @@\n mpat\n-%C3%AD\n+i\n vel'\n@@ -823,183 +823,8 @@\n     \n-        return False%0A        if self.__grafite is not None:%0A            print('fail: j%C3%A1 existe grafite')%0A            return False%0A    self.__grafite = grafite%0A    return True%0A\n %0A   \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-25_16-07-18",
+            "content": "@@ -961,28 +961,24 @@\n eturn False%0A\n-    \n     self.__g\n@@ -994,20 +994,16 @@\n grafite%0A\n-    \n     retu\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-25_16-07-24",
+            "content": "@@ -1511,22 +1511,15 @@\n e = \n-float(\n args%5B1%5D\n-)\n %0A   \n@@ -1532,29 +1532,35 @@\n    polis\n- = Lapiseira(\n+.temGrafite(calibre\n )%0A      \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-25_16-09-17",
+            "content": "@@ -1552,23 +1552,16 @@\n piseira(\n-calibre\n )%0A      \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-25_16-09-18",
+            "content": "@@ -1656,164 +1656,8 @@\n t':%0A\n-            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = int(args%5B3%5D)%0A            graf = Grafite(thickness, hardness, size)%0A\n     \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-25_16-10-34",
+            "content": "@@ -1834,20 +1834,23 @@\n inserir(\n-graf\n+calibre\n )%0Amain()\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-10-49",
+            "content": "@@ -824,17 +824,17 @@\n incompat\n-i\n+%C3%AD\n vel')%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-11-11",
+            "content": "@@ -474,26 +474,24 @@\n ness%7D:%7Bself.\n-__\n thickness%7D'%0A\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-11-34",
+            "content": "@@ -1,1857 +1,130 @@\n-class Grafite:%0A    def __init__(self, thickness: float, hardness: str, size:int):%0A        self.__size = size%0A        self.__thickness = thickness%0A        self.__hardness = hardness%0A%0A    def getthickness(self):%0A        return self.__thickness%0A    def gethardness(self):%0A        return self.__hardness%0A    def getSize(self):%0A        return self.__size%0A    def thickness(self):%0A        return self.__thickness%0A    def __str__(self):%0A        return f'%5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D'%0Aclass Lapiseira:%0A    def __init__(self, calibre):%0A        self.__calibre = calibre%0A        self.__grafite = None%0A%0A    def temGrafite(self) -%3E bool:%0A        return self.__grafite is not None%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        if grafite.getthickness() != self.__calibre:%0A            print('fail: calibre incompativel')%0A            return False%0A        if self.__grafite is not None:%0A            print('fail: j%C3%A1 existe grafite')%0A            return False%0A        self.__grafite = grafite%0A        return True%0A%0A    def __str__(self) -%3E str:%0A        if self.__grafite == None:%0A            estado = 'null'%0A            return f'calibre: %7Bself.__calibre%7D, grafite: %7Bestado%7D'%0A        return f'calibre: %7Bself.__calibre%7D, grafite: %7Bself.__grafite%7D'%0A%0Adef main():%0A    polis = Lapiseira(' ')%0A    while True: %0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end': %0A            break%0A        elif args%5B0%5D == 'init':%0A            calibre = float(args%5B1%5D)%0A            polis = Lapiseira(calibre)%0A        elif args%5B0%5D == 'show':%0A            print(polis)%0A        elif args%5B0%5D == 'insert':%0A            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = int(args%5B3%5D)%0A            graf = Grafite(thickness, hardness, size)%0A            polis.inserir(graf)%0Amain()\n+@@ -448,25 +448,20 @@%0A %257Bself.__%0A-thickness%0A+size%0A %257D:%257Bself.%0A@@ -480,20 +480,25 @@%0A %257Bself.__%0A-size%0A+thickness%0A %257D'%250Aclass%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-25_16-12-05",
+            "content": "@@ -775,39 +775,259 @@\n  != \n-None:%0A            print('fail')\n+self.__calibre:%0A            print('fail: calibre incompativel')%0A            return False%0A        if self.__grafite is not None:%0A            print('fail: j%C3%A1 existe grafite')%0A            return False%0A        self.__grafite = grafite%0A        return True%0A\n %0A   \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-12-54",
+            "content": "@@ -804,194 +804,10 @@\n fail\n-: calibre j%C3%A1 exite')%0A            return False%0A        if grafite.getthickness() != self.__grafite%0A            print('fail: calibre incompat%C3%ADvel')%0A            return False%0A        self.__\n+')\n %0A   \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-25_16-14-37",
+            "content": "@@ -990,45 +990,8 @@\n f.__\n-grafite = grafite%0A        return True\n %0A   \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-25_16-14-37",
+            "content": "@@ -893,25 +893,24 @@\n lf.__grafite\n-:\n %0A           \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-14-43",
+            "content": "@@ -771,29 +771,19 @@\n ss() != \n-self.__grafit\n+Non\n e:%0A     \n@@ -814,20 +814,16 @@\n bre \n-incompat%C3%ADvel\n+j%C3%A1 exite\n ')%0A \n@@ -875,35 +875,45 @@\n tthickness() != \n-Non\n+self.__grafit\n e:%0A            p\n@@ -928,32 +928,36 @@\n il: calibre \n-j%C3%A1 exite\n+incompat%C3%ADvel\n ')%0A         \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-15-13",
+            "content": "@@ -828,17 +828,17 @@\n incompat\n-i\n+%C3%AD\n vel')%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-15-28",
+            "content": "@@ -894,22 +894,18 @@\n kness() \n-is not\n+!=\n  None:%0A \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-16-11",
+            "content": "@@ -871,30 +871,38 @@\n      if \n-self.__calibre\n+grafite.getthickness()\n  is not \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-16-54",
+            "content": "@@ -768,17 +768,18 @@\n kness() \n-%3E\n+!=\n  self.__\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-17-57",
+            "content": "@@ -772,10 +772,9 @@\n s() \n-!=\n+%3E\n  sel\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-18-27",
+            "content": "@@ -440,24 +440,25 @@\n eturn f'\n+%5B\n %7Bself.__\n size%7D:%7Bs\n@@ -449,20 +449,25 @@\n %7Bself.__\n-size\n+thickness\n %7D:%7Bself.\n@@ -484,26 +484,24 @@\n %7D:%7Bself.\n-thickness%7D\n+__size%7D%5D\n '%0Aclass \n@@ -778,22 +778,22 @@\n  self.__\n-calibr\n+grafit\n e:%0A     \n@@ -832,9 +832,9 @@\n mpat\n-%C3%AD\n+i\n vel'\n@@ -870,38 +870,38 @@\n       if self.__\n-grafit\n+calibr\n e is not None:%0A \n@@ -928,22 +928,21 @@\n il: \n-j%C3%A1 existe graf\n+calibre j%C3%A1 ex\n ite'\n@@ -1021,17 +1021,16 @@\n rn True%0A\n-%0A\n     def \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-25_16-20-01",
+            "content": "@@ -824,17 +824,17 @@\n incompat\n-i\n+%C3%AD\n vel')%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-20-05",
+            "content": "@@ -448,25 +448,20 @@\n %7Bself.__\n-thickness\n+size\n %7D:%7Bself.\n@@ -478,22 +478,25 @@\n %7D:%7Bself.\n-__size\n+thickness\n %7D'%0Aclass\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-20-20",
+            "content": "@@ -1019,21 +1019,16 @@\n urn True\n-%0A    \n %0A%0A    de\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-21-59",
+            "content": "@@ -440,17 +440,16 @@\n eturn f'\n-%5B\n %7Bself.__\n@@ -490,17 +490,16 @@\n .__size%7D\n-%5D\n '%0Aclass \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-25_16-22-17",
+            "content": "@@ -925,17 +925,17 @@\n 'fail: j\n-a\n+%C3%A1\n  existe \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-25_16-22-25",
+            "content": "@@ -1026,70 +1026,8 @@\n rue%0A\n-    def remover(self, grafite: ):%0A        grafite_removido = %0A\n     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-25_16-25-48",
+            "content": "@@ -1052,17 +1052,19 @@\n grafite:\n-)\n+ ):\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-25-56",
+            "content": "@@ -1081,23 +1081,16 @@\n ovido = \n-grafite\n %0A    %0A%0A \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-25-57",
+            "content": "@@ -1051,16 +1051,17 @@\n  grafite\n+:\n )%0A      \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-26-04",
+            "content": "@@ -1052,17 +1052,16 @@\n grafite)\n-:\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-26-12",
+            "content": "@@ -1042,17 +1042,27 @@\n ver(self\n-)\n+, grafite):\n %0A       \n@@ -1081,23 +1081,16 @@\n ovido = \n-self.__\n grafite%0A\n@@ -1097,40 +1097,9 @@\n     \n-    return None%0A        print(')\n+%0A\n %0A   \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-27-57",
+            "content": "@@ -1120,32 +1120,17 @@\n   print(\n-grafite_removido\n+'\n )%0A    de\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-27-58",
+            "content": "@@ -1039,25 +1039,24 @@\n emover(self)\n-:\n %0A        gra\n@@ -1963,53 +1963,8 @@\n af)%0A\n-        elif args%5B0%5D = 'remove'%0A            %0A\n main\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_16-28-38",
+            "content": "@@ -2008,23 +2008,8 @@\n     \n-polis.remover()\n %0Amai\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-28-39",
+            "content": "@@ -1,2034 +1,51 @@\n-class Grafite:%0A    def __init__(self, thickness: float, hardness: str, size:int):%0A        self.__size = size%0A        self.__thickness = thickness%0A        self.__hardness = hardness%0A%0A    def getthickness(self):%0A        return self.__thickness%0A    def gethardness(self):%0A        return self.__hardness%0A    def getSize(self):%0A        return self.__size%0A    def thickness(self):%0A        return self.__thickness%0A    def __str__(self):%0A        return f'%5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D'%0Aclass Lapiseira:%0A    def __init__(self, calibre):%0A        self.__calibre = calibre%0A        self.__grafite = None%0A%0A    def temGrafite(self) -%3E bool:%0A        return self.__grafite is not None%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        if grafite.getthickness() != self.__calibre:%0A            print('fail: calibre incompativel')%0A            return False%0A        if self.__grafite is not None:%0A            print('fail: ja existe grafite')%0A            return False%0A        self.__grafite = grafite%0A        return True%0A    def remover(self):%0A        grafite_removido = self.__grafite%0A        return None%0A        print(grafite_removido)%0A    def __str__(self) -%3E str:%0A        if self.__grafite == None:%0A            estado = 'null'%0A            return f'calibre: %7Bself.__calibre%7D, grafite: %7Bestado%7D'%0A        return f'calibre: %7Bself.__calibre%7D, grafite: %7Bself.__grafite%7D'%0A%0Adef main():%0A    polis = Lapiseira(' ')%0A    while True: %0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end': %0A            break%0A        elif args%5B0%5D == 'init':%0A            calibre = float(args%5B1%5D)%0A            polis = Lapiseira(calibre)%0A        elif args%5B0%5D == 'show':%0A            print(polis)%0A        elif args%5B0%5D == 'insert':%0A            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = int(args%5B3%5D)%0A            graf = Grafite(thickness, hardness, size)%0A            polis.inserir(graf)%0A        elif args%5B0%5D == 'remove'%0A            polis.remover()%0Amain()\n+@@ -1982,17 +1982,16 @@%0A rgs%255B0%255D =%0A-=%0A  'remove%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-25_16-28-47",
+            "content": "@@ -1992,17 +1992,16 @@\n 'remove'\n-:\n %0A       \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-28-48",
+            "content": "@@ -1047,26 +1047,8 @@\n elf)\n- -%3E Grafite %7C None\n :%0A  \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-29-45",
+            "content": "@@ -1139,22 +1139,32 @@\n   print(\n-'null'\n+grafite_removido\n )%0A    de\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-29-57",
+            "content": "@@ -1113,32 +1113,22 @@\n         \n-self.__grafite =\n+return\n  None%0A  \n@@ -1139,17 +1139,21 @@\n   print(\n-g\n+'null\n ')%0A    d\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-30-33",
+            "content": "@@ -1150,31 +1150,17 @@\n  print(g\n-rafite_removido\n+'\n )%0A    de\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-30-34",
+            "content": "@@ -1143,16 +1143,39 @@\n         \n+print(grafite_removido)\n %0A    def\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-30-56",
+            "content": "@@ -1143,108 +1143,12 @@\n     \n-def escrever(self):%0A        if self.__grafite is None:%0A            print('fail: nao existe grafite')\n+    \n %0A   \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-25_16-33-35",
+            "content": "@@ -2127,70 +2127,8 @@\n r()%0A\n-        elif args%5B0%5D == 'write':%0A            polis.escrever()%0A\n main\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-25_16-33-56",
+            "content": "@@ -1244,86 +1244,8 @@\n e')%0A\n-        if self.__size %3C= 10:%0A            print('fail: tamanho insuficiente')%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_16-35-23",
+            "content": "@@ -1255,27 +1255,21 @@\n  if \n-grafite.getsize() !\n+self.__size %3C\n = 10\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_16-35-45",
+            "content": "@@ -1262,17 +1262,17 @@\n fite.get\n-S\n+s\n ize() !=\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_16-36-12",
+            "content": "@@ -2267,20 +2267,16 @@\n screver(\n-graf\n )%0Amain()\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_16-36-55",
+            "content": "@@ -2244,159 +2244,8 @@\n e':%0A\n-            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = args%5B3%5D%0A            graf = Grafite(thickness, hardness, size)%0A\n     \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_16-37-39",
+            "content": "@@ -2236,24 +2236,175 @@\n == 'write':%0A\n+            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = args%5B3%5D%0A            graf = Grafite(thickness, hardness, size)%0A\n             \n@@ -2418,16 +2418,20 @@\n screver(\n+graf\n )%0Amain()\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-25_16-37-59",
+            "content": "@@ -1,2198 +1,137 @@\n-class Grafite:%0A    def __init__(self, thickness: float, hardness: str, size:int):%0A        self.__size = size%0A        self.__thickness = thickness%0A        self.__hardness = hardness%0A%0A    def getthickness(self):%0A        return self.__thickness%0A    def gethardness(self):%0A        return self.__hardness%0A    def getSize(self):%0A        return self.__size%0A    def thickness(self):%0A        return self.__thickness%0A    def __str__(self):%0A        return f'%5B%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D'%0Aclass Lapiseira:%0A    def __init__(self, calibre):%0A        self.__calibre = calibre%0A        self.__grafite = None%0A%0A    def temGrafite(self) -%3E bool:%0A        return self.__grafite is not None%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        if grafite.getthickness() != self.__calibre:%0A            print('fail: calibre incompativel')%0A            return False%0A        if self.__grafite is not None:%0A            print('fail: ja existe grafite')%0A            return False%0A        self.__grafite = grafite%0A        return True%0A    def remover(self) -%3E Grafite %7C None:%0A        grafite_removido = self.__grafite%0A        self.__grafite = None%0A    def escrever(self):%0A        if self.__grafite is None:%0A            print('fail: nao existe grafite')%0A    def __str__(self) -%3E str:%0A        if self.__grafite == None:%0A            estado = 'null'%0A            return f'calibre: %7Bself.__calibre%7D, grafite: %7Bestado%7D'%0A        return f'calibre: %7Bself.__calibre%7D, grafite: %7Bself.__grafite%7D'%0A%0Adef main():%0A    polis = Lapiseira(' ')%0A    while True: %0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(' ')%0A        print(f'$' + line)%0A%0A        if args%5B0%5D == 'end': %0A            break%0A        elif args%5B0%5D == 'init':%0A            calibre = float(args%5B1%5D)%0A            polis = Lapiseira(calibre)%0A        elif args%5B0%5D == 'show':%0A            print(polis)%0A        elif args%5B0%5D == 'insert':%0A            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = int(args%5B3%5D)%0A            graf = Grafite(thickness, hardness, size)%0A            polis.inserir(graf)%0A        elif args%5B0%5D == 'remove':%0A            polis.remover()%0A        elif args%5B0%5D == 'write':%0A            polis.escrever()%0Amain()\n+@@ -1244,24 +1244,100 @@%0A e')%250A        %0A+if grafite.getSize() != 10:%250A            print('fail: tamanho insuficiente')%250A%0A     def __st%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-25_16-38-22",
+            "content": "@@ -1244,42 +1244,8 @@\n e')%0A\n-            return self.__grafite%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_16-38-57",
+            "content": "@@ -1177,34 +1177,34 @@\n  self.__grafite \n-==\n+is\n  None:%0A         \n@@ -1278,17 +1278,8 @@\n ite%0A\n-        %0A\n     \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-25_16-39-50",
+            "content": "class Grafite:\n    def __init__(self, thickness: float, hardness: str, size:int):\n        self.__size = size\n        self.__thickness = thickness\n        self.__hardness = hardness\n\n    def getthickness(self):\n        return self.__thickness\n    def gethardness(self):\n        return self.__hardness\n    def getSize(self):\n        return self.__size\n    def thickness(self):\n        return self.__thickness\n    def __str__(self):\n        return f'[{self.__thickness}:{self.__hardness}:{self.__size}]'\nclass Lapiseira:\n    def __init__(self, calibre):\n        self.__calibre = calibre\n        self.__grafite = None\n\n    def temGrafite(self) -> bool:\n        return self.__grafite is not None\n\n    def inserir(self, grafite: Grafite) -> bool:\n        if grafite.getthickness() != self.__calibre:\n            print('fail: calibre incompativel')\n            return False\n        if self.__grafite is not None:\n            print('fail: ja existe grafite')\n            return False\n        self.__grafite = grafite\n        return True\n    def remover(self) -> Grafite | None:\n        grafite_removido = self.__grafite\n        self.__grafite = None\n    def escrever(self):\n        if self.__grafite == None:\n            print('fail: nao existe grafite')\n            return self.__grafite\n        \n    def __str__(self) -> str:\n        if self.__grafite == None:\n            estado = 'null'\n            return f'calibre: {self.__calibre}, grafite: {estado}'\n        return f'calibre: {self.__calibre}, grafite: {self.__grafite}'\n\ndef main():\n    polis = Lapiseira(' ')\n    while True: \n        line: str = input()\n        args: list[str] = line.split(' ')\n        print(f'$' + line)\n\n        if args[0] == 'end': \n            break\n        elif args[0] == 'init':\n            calibre = float(args[1])\n            polis = Lapiseira(calibre)\n        elif args[0] == 'show':\n            print(polis)\n        elif args[0] == 'insert':\n            thickness = float(args[1])\n            hardness = args[2]\n            size = int(args[3])\n            graf = Grafite(thickness, hardness, size)\n            polis.inserir(graf)\n        elif args[0] == 'remove':\n            polis.remover()\n        elif args[0] == 'write':\n            polis.escrever()\nmain()",
+            "lines": "72"
+        }
+    ]
+}
