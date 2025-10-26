@@ -562,8 +562,363 @@
         },
         {
             "label": "2025-10-25_16-39-50",
-            "content": "class Grafite:\n    def __init__(self, thickness: float, hardness: str, size:int):\n        self.__size = size\n        self.__thickness = thickness\n        self.__hardness = hardness\n\n    def getthickness(self):\n        return self.__thickness\n    def gethardness(self):\n        return self.__hardness\n    def getSize(self):\n        return self.__size\n    def thickness(self):\n        return self.__thickness\n    def __str__(self):\n        return f'[{self.__thickness}:{self.__hardness}:{self.__size}]'\nclass Lapiseira:\n    def __init__(self, calibre):\n        self.__calibre = calibre\n        self.__grafite = None\n\n    def temGrafite(self) -> bool:\n        return self.__grafite is not None\n\n    def inserir(self, grafite: Grafite) -> bool:\n        if grafite.getthickness() != self.__calibre:\n            print('fail: calibre incompativel')\n            return False\n        if self.__grafite is not None:\n            print('fail: ja existe grafite')\n            return False\n        self.__grafite = grafite\n        return True\n    def remover(self) -> Grafite | None:\n        grafite_removido = self.__grafite\n        self.__grafite = None\n    def escrever(self):\n        if self.__grafite == None:\n            print('fail: nao existe grafite')\n            return self.__grafite\n        \n    def __str__(self) -> str:\n        if self.__grafite == None:\n            estado = 'null'\n            return f'calibre: {self.__calibre}, grafite: {estado}'\n        return f'calibre: {self.__calibre}, grafite: {self.__grafite}'\n\ndef main():\n    polis = Lapiseira(' ')\n    while True: \n        line: str = input()\n        args: list[str] = line.split(' ')\n        print(f'$' + line)\n\n        if args[0] == 'end': \n            break\n        elif args[0] == 'init':\n            calibre = float(args[1])\n            polis = Lapiseira(calibre)\n        elif args[0] == 'show':\n            print(polis)\n        elif args[0] == 'insert':\n            thickness = float(args[1])\n            hardness = args[2]\n            size = int(args[3])\n            graf = Grafite(thickness, hardness, size)\n            polis.inserir(graf)\n        elif args[0] == 'remove':\n            polis.remover()\n        elif args[0] == 'write':\n            polis.escrever()\nmain()",
+            "content": "@@ -1282,34 +1282,16 @@\n         \n-if self.__grafite \n %0A    def\n",
             "lines": "72"
+        },
+        {
+            "label": "2025-10-25_20-19-15",
+            "content": "@@ -1282,442 +1282,30 @@\n     \n-def usagepersheet(self):%0A    #     O m%C3%A9todo %60usagePerSheet%60 retorna a quantidade de grafite gasto por folha.%0A    #   - Um grafite %60HB%60 gasta %601mm%60 por folha.%0A    #   - Um grafite %602B%60 gasta %602mm%60 por folha.%0A    #   - Um grafite %604B%60 gasta %604mm%60 por folha.%0A    #   - Um grafite %606B%60 gasta %606mm%60 por folha.%0A        if self.__hardness == 'HB':%0A            self.__size =- 1%0A        if self.__hardness == '2B':%0A            self.__size =- 2\n+    if self.__grafite \n %0A   \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_20-21-45",
+            "content": "@@ -1717,139 +1717,8 @@\n - 2%0A\n-        if self.__hardness == '4B':%0A            self.__size =- 4%0A        if self.__hardness == '6B':%0A            self.__size =- 5 %0A\n     \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-25_20-22-50",
+            "content": "@@ -179,325 +179,8 @@\n ss%0A%0A\n-    def usagepersheet(self):%0A        if self.__hardness == 'HB':%0A            return self.__size =- 1%0A        if self.__hardness == '2B':%0A            return self.__size =- 2%0A        if self.__hardness == '4B':%0A            return self.__size =- 4%0A        if self.__hardness == '6B':%0A            return self.__size =- 6%0A\n     \n@@ -1270,24 +1270,594 @@\n f.__grafite%0A\n+    def usagepersheet(self):%0A    #     O m%C3%A9todo %60usagePerSheet%60 retorna a quantidade de grafite gasto por folha.%0A    #   - Um grafite %60HB%60 gasta %601mm%60 por folha.%0A    #   - Um grafite %602B%60 gasta %602mm%60 por folha.%0A    #   - Um grafite %604B%60 gasta %604mm%60 por folha.%0A    #   - Um grafite %606B%60 gasta %606mm%60 por folha.%0A        if self.__hardness == 'HB':%0A            self.__size =- 1%0A        if self.__hardness == '2B':%0A            self.__size =- 2%0A        if self.__hardness == '4B':%0A            self.__size =- 4%0A        if self.__hardness == '6B':%0A            self.__size =- 5 %0A\n     def __st\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-26-40",
+            "content": "@@ -272,16 +272,17 @@\n __size =\n+-\n  1%0A     \n@@ -344,16 +344,17 @@\n __size =\n+-\n  2%0A     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-25_20-26-56",
+            "content": "@@ -342,17 +342,16 @@\n .__size \n--\n = 2%0A    \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-25_20-26-56",
+            "content": "@@ -244,32 +244,39 @@\n B':%0A            \n+return \n self.__size = 1%0A\n@@ -315,32 +315,39 @@\n B':%0A            \n+return \n self.__size -= 2\n@@ -387,32 +387,39 @@\n B':%0A            \n+return \n self.__size =- 4\n@@ -459,32 +459,39 @@\n B':%0A            \n+return \n self.__size =- 6\n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-25_20-27-18",
+            "content": "@@ -265,17 +265,16 @@\n __size =\n--\n  1%0A     \n@@ -1451,48 +1451,8 @@\n f):%0A\n-        gasto = grafite.usagepersheet()%0A\n     \n@@ -1566,91 +1566,8 @@\n ite%0A\n-        if gasto %3E self.__grafite:%0A            print('fail: tamanho insuficiente')%0A\n     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-25_20-30-34",
+            "content": "@@ -1620,18 +1620,17 @@\n f gasto \n-!=\n+%3E\n  self.__\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_20-30-50",
+            "content": "@@ -1445,34 +1445,16 @@\n ver(self\n-, grafite: Grafite\n ):%0A     \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_20-31-07",
+            "content": "@@ -2625,38 +2625,8 @@\n e':%0A\n-            grafite = args%5B1%5D%0A\n     \n@@ -2648,23 +2648,16 @@\n screver(\n-grafite\n )%0Amain()\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_20-31-31",
+            "content": "@@ -2617,24 +2617,54 @@\n == 'write':%0A\n+            grafite = args%5B1%5D%0A\n             \n@@ -2678,16 +2678,23 @@\n screver(\n+grafite\n )%0Amain()\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-25_20-31-39",
+            "content": "@@ -1441,24 +1441,42 @@\n screver(self\n+, grafite: Grafite\n ):%0A        g\n@@ -1623,32 +1623,41 @@\n afite%0A        if\n+ gasto !=\n  self.__grafite \n@@ -1659,14 +1659,8 @@\n fite\n- == 10\n :%0A  \n@@ -1709,42 +1709,8 @@\n e')%0A\n-            return self.__grafite%0A\n     \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_20-32-23",
+            "content": "@@ -1440,32 +1440,72 @@\n escrever(self):%0A\n+        gasto = grafite.usagepersheet()%0A\n         if self.\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-25_20-32-53",
+            "content": "@@ -264,18 +264,18 @@\n .__size \n--\n =\n+-\n  1%0A     \n@@ -1592,20 +1592,10 @@\n fite\n-.getSize() %3C\n+ =\n = 10\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_20-36-20",
+            "content": "@@ -1658,32 +1658,39 @@\n e')%0A            \n+return \n self.__grafite =\n@@ -1691,73 +1691,8 @@\n fite\n- = None%0A            return%0A        self.__grafite.usagepersheet()\n %0A   \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-25_20-36-57",
+            "content": "@@ -1650,24 +1650,58 @@\n uficiente')%0A\n+            self.__grafite = None%0A\n             \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-37-06",
+            "content": "@@ -394,18 +394,18 @@\n .__size \n--\n =\n+-\n  4%0A     \n@@ -459,18 +459,18 @@\n .__size \n--\n =\n+-\n  6%0A    d\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-25_20-38-33",
+            "content": "@@ -1716,64 +1716,8 @@\n t()%0A\n-        self.__grafite = self.__grafite.usagepersheet()%0A\n     \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-25_20-40-20",
+            "content": "@@ -1747,24 +1747,40 @@\n lf.__grafite\n+.usagepersheet()\n %0A    def __s\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-40-28",
+            "content": "@@ -1755,12 +1755,8 @@\n fite\n- + 2\n %0A   \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-40-36",
+            "content": "@@ -1747,24 +1747,28 @@\n lf.__grafite\n+ + 2\n %0A    def __s\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-40-42",
+            "content": "@@ -1740,32 +1740,31 @@\n te = self.__\n-hardness\n+grafite\n %0A    def __s\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-40-57",
+            "content": "@@ -1664,32 +1664,40 @@\n           return\n+%0A       \n  self.__grafite%0A\n@@ -1687,32 +1687,48 @@\n   self.__grafite\n+.usagepersheet()\n %0A        self.__\n@@ -1734,32 +1734,34 @@\n _grafite\n-.usagepersheet()\n+ = self.__hardness\n %0A    def\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_20-41-21",
+            "content": "@@ -1452,36 +1452,8 @@\n f):%0A\n-        minimo_grafite = 10%0A\n     \n@@ -1606,22 +1606,10 @@\n  %3C= \n-minimo_grafite\n+10\n :%0A  \n@@ -1677,25 +1677,26 @@\n urn self\n-%0A        \n+.__grafite\n %0A       \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-25_20-43-37",
+            "content": "@@ -1713,30 +1713,20 @@\n  return \n-minimo_grafite\n+self\n %0A       \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-43-44",
+            "content": "@@ -1713,25 +1713,16 @@\n  return \n-%0A        \n minimo_g\n@@ -1720,32 +1720,41 @@\n  minimo_grafite%0A\n+        %0A\n         self.__g\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-43-55",
+            "content": "@@ -1722,22 +1722,16 @@\n         \n-print(\n minimo_g\n@@ -1736,17 +1736,16 @@\n _grafite\n-)\n %0A       \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-44-02",
+            "content": "@@ -1722,16 +1722,37 @@\n         \n+print(minimo_grafite)\n %0A       \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-44-07",
+            "content": "@@ -1726,141 +1726,8 @@\n     \n-if self.__grafite.getSize() %3E minimo_grafite:%0A            print('fail: folha incompleta')%0A            self.__grafite = minimo_grafite\n %0A   \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-44-53",
+            "content": "@@ -1754,10 +1754,9 @@\n e() \n-=%3C\n+%3E\n  min\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-45-12",
+            "content": "@@ -1751,17 +1751,17 @@\n Size() =\n-%3E\n+%3C\n  minimo_\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-45-14",
+            "content": "@@ -1754,10 +1754,10 @@\n e() \n-%3E\n =\n+%3E\n  min\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-45-19",
+            "content": "@@ -1718,47 +1718,8 @@\n rn %0A\n-        self.__grafite.usagepersheet()%0A\n     \n@@ -1742,33 +1742,33 @@\n afite.getSize() \n-%3C\n+%3E\n = minimo_grafite\n@@ -1853,24 +1853,63 @@\n imo_grafite%0A\n+        self.__grafite.usagepersheet()%0A\n     def __st\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-46-49",
+            "content": "@@ -1864,22 +1864,32 @@\n         \n-return\n+self.__grafite =\n  minimo_\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-47-11",
+            "content": "@@ -1789,16 +1789,17 @@\n tSize() \n+%3C\n = minimo\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-47-23",
+            "content": "@@ -1790,17 +1790,16 @@\n Size() =\n-=\n  minimo_\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-47-29",
+            "content": "@@ -1789,17 +1789,17 @@\n tSize() \n-%3E\n+=\n = minimo\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-47-34",
+            "content": "@@ -1781,33 +1781,33 @@\n afite.getSize() \n-%3C\n+%3E\n = minimo_grafite\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-47-41",
+            "content": "@@ -1761,18 +1761,16 @@\n         \n-el\n if self.\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-47-49",
+            "content": "@@ -1753,32 +1753,34 @@\n sheet()%0A        \n+el\n if self.__grafit\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-48-14",
+            "content": "@@ -1749,24 +1749,127 @@\n epersheet()%0A\n+        if self.__grafite.getSize() %3C= minimo_grafite:%0A            print('fail: folha incompleta')%0A    \n         retu\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-49-21",
+            "content": "@@ -1761,30 +1761,37 @@\n         \n-self.__size = \n+return minimo_grafite\n %0A    def\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-49-38",
+            "content": "@@ -1775,30 +1775,16 @@\n _size = \n-minimo_grafite\n %0A    def\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-49-39",
+            "content": "@@ -1725,24 +1725,8 @@\n     \n- tamanho_atual =\n  sel\n@@ -1765,120 +1765,21 @@\n     \n-if tamanho_atual - self.__size %3C= minimo_grafite:%0A            print('fail: folha incompleta')%0A            return\n+self.__size =\n  min\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-53-27",
+            "content": "@@ -1780,16 +1780,43 @@\n      if \n+tamanho_atual - self.__size\n  %3C= mini\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-53-41",
+            "content": "@@ -1780,29 +1780,16 @@\n      if \n-tamanho_atual\n  %3C= mini\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-53-42",
+            "content": "@@ -1713,32 +1713,48 @@\n  return %0A       \n+ tamanho_atual =\n  self.__grafite.\n@@ -1777,16 +1777,129 @@\n         \n+if tamanho_atual %3C= minimo_grafite:%0A            print('fail: folha incompleta')%0A            return minimo_grafite\n %0A    def\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_20-54-01",
+            "content": "@@ -1595,171 +1595,8 @@\n ite%0A\n-        tamanho_atual = self.__grafite.getSize()%0A        dureza = self.__grafite.gethardness()%0A        gasto = %7B'HB': 1, '2B': 2, '4B': 4, '6B', 6%7D.get(dureza, 1)%0A\n     \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_20-56-40",
+            "content": "@@ -1734,17 +1734,17 @@\n  4, '6B'\n-:\n+,\n  6%7D.get(\n@@ -1754,17 +1754,16 @@\n eza, 1)%0A\n-%0A\n         \n@@ -1769,31 +1769,35 @@\n  if \n-tamanho_atual - gasto\n+self.__grafite.getSize()\n  %3C\n+=\n  min\n@@ -1838,70 +1838,30 @@\n il: \n-folha incompleta')%0A            self.__grafite = minimo_grafite\n+tamanho insuficiente')\n %0A   \n@@ -1875,16 +1875,17 @@\n   return\n+ \n %0A       \n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-10-25_20-57-44",
+            "content": "@@ -1763,18 +1763,16 @@\n         \n-el\n if taman\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_20-58-05",
+            "content": "@@ -1759,28 +1759,24 @@\n 1)%0A%0A        \n-    \n elif tamanho\n@@ -1812,36 +1812,32 @@\n te:%0A            \n-    \n print('fail: fol\n@@ -1852,20 +1852,16 @@\n pleta')%0A\n-    \n         \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_20-58-18",
+            "content": "@@ -1916,28 +1916,24 @@\n             \n-    \n return%0A     \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_20-58-19",
+            "content": "@@ -1763,20 +1763,22 @@\n         \n+    \n el\n-if\n if taman\n@@ -1816,32 +1816,36 @@\n te:%0A            \n+   \n+ \n print('fail: fol\n@@ -1860,16 +1860,20 @@\n pleta')%0A\n+    \n         \n@@ -1900,32 +1900,36 @@\n  minimo_grafite%0A\n+    \n             retu\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_20-58-27",
+            "content": "@@ -1,12 +1,33 @@\n+@@ -1,2921 +1,48 @@%0A-\n class Grafit\n@@ -24,25 +24,27 @@\n ass Grafite:\n-%0A\n+%250A\n     def __in\n@@ -97,17 +97,19 @@\n ze:int):\n-%0A\n+%250A\n         \n@@ -122,25 +122,27 @@\n _size = size\n-%0A\n+%250A\n         self\n@@ -161,25 +161,27 @@\n  = thickness\n-%0A\n+%250A\n         self\n@@ -202,18 +202,22 @@\n hardness\n-%0A%0A\n+%250A%250A\n     def \n@@ -232,25 +232,27 @@\n sheet(self):\n-%0A\n+%250A\n         if s\n@@ -274,17 +274,19 @@\n == 'HB':\n-%0A\n+%250A\n         \n@@ -305,17 +305,19 @@\n ize -= 1\n-%0A\n+%250A\n         \n@@ -343,17 +343,19 @@\n == '2B':\n-%0A\n+%250A\n         \n@@ -374,17 +374,19 @@\n ize -= 2\n-%0A\n+%250A\n         \n@@ -412,17 +412,19 @@\n == '4B':\n-%0A\n+%250A\n         \n@@ -443,17 +443,19 @@\n ize -= 4\n-%0A\n+%250A\n         \n@@ -481,17 +481,19 @@\n == '6B':\n-%0A\n+%250A\n         \n@@ -512,17 +512,19 @@\n ize -= 6\n-%0A\n+%250A\n     def \n@@ -534,33 +534,35 @@\n thickness(self):\n-%0A\n+%250A\n         return s\n@@ -568,33 +568,35 @@\n self.__thickness\n-%0A\n+%250A\n     def gethardn\n@@ -597,33 +597,35 @@\n thardness(self):\n-%0A\n+%250A\n         return s\n@@ -634,25 +634,27 @@\n f.__hardness\n-%0A\n+%250A\n     def getS\n@@ -659,25 +659,27 @@\n tSize(self):\n-%0A\n+%250A\n         retu\n@@ -692,17 +692,19 @@\n f.__size\n-%0A\n+%250A\n     def \n@@ -715,25 +715,27 @@\n kness(self):\n-%0A\n+%250A\n         retu\n@@ -753,17 +753,19 @@\n hickness\n-%0A\n+%250A\n     def \n@@ -774,25 +774,27 @@\n str__(self):\n-%0A\n+%250A\n         retu\n@@ -802,10 +802,14 @@\n n f'\n-%5B%7B\n+%255B%257B\n self\n@@ -816,27 +816,31 @@\n .__thickness\n-%7D:%7B\n+%257D:%257B\n self.__hardn\n@@ -846,11 +846,15 @@\n ness\n-%7D:%7B\n+%257D:%257B\n self\n@@ -864,12 +864,18 @@\n size\n-%7D%5D'%0A\n+%257D%255D'%250A\n clas\n@@ -886,17 +886,19 @@\n piseira:\n-%0A\n+%250A\n     def \n@@ -921,17 +921,19 @@\n alibre):\n-%0A\n+%250A\n         \n@@ -956,17 +956,19 @@\n  calibre\n-%0A\n+%250A\n         \n@@ -984,26 +984,30 @@\n afite = None\n-%0A%0A\n+%250A%250A\n     def temG\n@@ -1020,24 +1020,28 @@\n (self) -\n-%3E\n+%253E\n  bool:\n-%0A\n+%250A\n         \n@@ -1073,18 +1073,22 @@\n not None\n-%0A%0A\n+%250A%250A\n     def \n@@ -1124,16 +1124,20 @@\n e) -\n-%3E\n+%253E\n  bool:\n-%0A\n+%250A\n     \n@@ -1184,17 +1184,19 @@\n calibre:\n-%0A\n+%250A\n         \n@@ -1234,17 +1234,19 @@\n ativel')\n-%0A\n+%250A\n         \n@@ -1253,33 +1253,35 @@\n     return False\n-%0A\n+%250A\n         if self.\n@@ -1298,25 +1298,27 @@\n is not None:\n-%0A\n+%250A\n             \n@@ -1341,33 +1341,35 @@\n existe grafite')\n-%0A\n+%250A\n             retu\n@@ -1376,17 +1376,19 @@\n rn False\n-%0A\n+%250A\n         \n@@ -1407,25 +1407,27 @@\n te = grafite\n-%0A\n+%250A\n         retu\n@@ -1433,17 +1433,19 @@\n urn True\n-%0A\n+%250A\n     def \n@@ -1459,17 +1459,19 @@\n (self) -\n-%3E\n+%253E\n  Grafite\n@@ -1475,16 +1475,20 @@\n ite \n-%7C\n+%257C\n  None:\n-%0A\n+%250A\n     \n@@ -1516,33 +1516,35 @@\n = self.__grafite\n-%0A\n+%250A\n         self.__g\n@@ -1556,17 +1556,19 @@\n e = None\n-%0A\n+%250A\n     def \n@@ -1582,17 +1582,19 @@\n r(self):\n-%0A\n+%250A\n         \n@@ -1612,17 +1612,19 @@\n ite = 10\n-%0A\n+%250A\n         \n@@ -1654,9 +1654,11 @@\n sto \n-%3C\n+%253C\n  min\n@@ -1669,17 +1669,19 @@\n grafite:\n-%0A\n+%250A\n         \n@@ -1715,17 +1715,19 @@\n mpleta')\n-%0A\n+%250A\n         \n@@ -1753,33 +1753,35 @@\n = minimo_grafite\n-%0A\n+%250A\n             retu\n@@ -1782,17 +1782,19 @@\n   return\n-%0A\n+%250A\n         \n@@ -1833,17 +1833,19 @@\n etSize()\n-%0A\n+%250A\n         \n@@ -1881,17 +1881,19 @@\n rdness()\n-%0A\n+%250A\n         \n@@ -1900,17 +1900,19 @@\n gasto = \n-%7B\n+%257B\n 'HB': 1,\n@@ -1937,17 +1937,19 @@\n  '6B': 6\n-%7D\n+%257D\n .get(dur\n@@ -1955,18 +1955,22 @@\n reza, 1)\n-%0A%0A\n+%250A%250A\n         \n@@ -1987,33 +1987,35 @@\n grafite == None:\n-%0A\n+%250A\n             prin\n@@ -2043,17 +2043,19 @@\n rafite')\n-%0A\n+%250A\n         \n@@ -2079,17 +2079,19 @@\n _grafite\n-%0A\n+%250A\n         \n@@ -2120,25 +2120,27 @@\n rsheet()\n-%0A\n+%250A\n         \n %0A    def\n@@ -2131,17 +2131,19 @@\n         \n-%0A\n+%250A\n     def \n@@ -2161,15 +2161,19 @@\n f) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -2202,17 +2202,19 @@\n == None:\n-%0A\n+%250A\n         \n@@ -2232,17 +2232,19 @@\n = 'null'\n-%0A\n+%250A\n         \n@@ -2257,33 +2257,35 @@\n turn f'calibre: \n-%7B\n+%257B\n self.__calibre%7D,\n@@ -2274,33 +2274,35 @@\n 7Bself.__calibre\n-%7D\n+%257D\n , grafite: %7Besta\n@@ -2300,18 +2300,24 @@\n te: \n-%7B\n+%257B\n estado\n-%7D'%0A\n+%257D'%250A\n     \n@@ -2338,17 +2338,19 @@\n alibre: \n-%7B\n+%257B\n self.__c\n@@ -2355,17 +2355,19 @@\n _calibre\n-%7D\n+%257D\n , grafit\n@@ -2373,9 +2373,11 @@\n te: \n-%7B\n+%257B\n self\n@@ -2390,12 +2390,18 @@\n fite\n-%7D'%0A%0A\n+%257D'%250A%250A\n def \n@@ -2407,17 +2407,19 @@\n  main():\n-%0A\n+%250A\n     poli\n@@ -2432,25 +2432,27 @@\n piseira(' ')\n-%0A\n+%250A\n     while Tr\n@@ -2455,17 +2455,19 @@\n e True: \n-%0A\n+%250A\n         \n@@ -2485,17 +2485,19 @@\n  input()\n-%0A\n+%250A\n         \n@@ -2510,13 +2510,17 @@\n list\n-%5Bstr%5D\n+%255Bstr%255D\n  = l\n@@ -2533,17 +2533,19 @@\n lit(' ')\n-%0A\n+%250A\n         \n@@ -2566,10 +2566,14 @@\n ine)\n-%0A%0A\n+%250A%250A\n     \n@@ -2579,27 +2579,31 @@\n      if args\n-%5B0%5D\n+%255B0%255D\n  == 'end': %0A\n@@ -2601,17 +2601,19 @@\n  'end': \n-%0A\n+%250A\n         \n@@ -2621,17 +2621,19 @@\n    break\n-%0A\n+%250A\n         \n@@ -2637,27 +2637,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'init':%0A\n@@ -2659,17 +2659,19 @@\n  'init':\n-%0A\n+%250A\n         \n@@ -2686,37 +2686,43 @@\n bre = float(args\n-%5B1%5D)%0A\n+%255B1%255D)%250A\n             poli\n@@ -2743,17 +2743,19 @@\n calibre)\n-%0A\n+%250A\n         \n@@ -2759,27 +2759,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'show':%0A\n@@ -2781,17 +2781,19 @@\n  'show':\n-%0A\n+%250A\n         \n@@ -2808,17 +2808,19 @@\n t(polis)\n-%0A\n+%250A\n         \n@@ -2824,27 +2824,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'insert'\n@@ -2848,17 +2848,19 @@\n insert':\n-%0A\n+%250A\n         \n@@ -2889,13 +2889,19 @@\n args\n-%5B1%5D)%0A\n+%255B1%255D)%250A\n     \n@@ -2927,12 +2927,18 @@\n args\n-%5B2%5D%0A\n+%255B2%255D%250A\n     \n@@ -2964,13 +2964,19 @@\n args\n-%5B3%5D)%0A\n+%255B3%255D)%250A\n     \n@@ -3024,17 +3024,19 @@\n s, size)\n-%0A\n+%250A\n         \n@@ -3058,17 +3058,19 @@\n ir(graf)\n-%0A\n+%250A\n         \n@@ -3074,27 +3074,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'remove'\n@@ -3098,17 +3098,19 @@\n remove':\n-%0A\n+%250A\n         \n@@ -3128,17 +3128,19 @@\n emover()\n-%0A\n+%250A\n         \n@@ -3152,11 +3152,15 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n@@ -3167,17 +3167,19 @@\n 'write':\n-%0A\n+%250A\n         \n@@ -3202,11 +3202,72 @@\n er()\n-%0A\n+%250A\n main()\n+%0A+@@ -1767,16 +1767,18 @@%250A     elif%250A+if%250A  tamanho%250A%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-25_20-59-22",
+            "content": "@@ -1484,16 +1484,18 @@\n         \n+el\n if taman\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_20-59-23",
+            "content": "@@ -1484,16 +1484,19 @@\n         \n+if \n tamanho_\n@@ -1505,33 +1505,76 @@\n ual \n-= self.__grafite.getSize(\n+- gasto %3C minimo_grafite:%0A            print('fail: folha incompleta'\n )%0A  \n@@ -1583,16 +1583,11 @@\n     \n-dureza =\n+   \n  sel\n@@ -1601,90 +1601,44 @@\n fite\n-.gethardness()%0A        gasto = %7B'HB': 1, '2B': 2, '4B': 4, '6B': 6%7D.get(dureza, 1)\n+ = minimo_grafite%0A            return\n %0A   \n@@ -1634,35 +1634,32 @@\n  return%0A        \n-if \n tamanho_atual - \n@@ -1660,76 +1660,33 @@\n ual \n-- gasto %3C minimo_grafite:%0A            print('fail: folha incompleta'\n+= self.__grafite.getSize(\n )%0A  \n@@ -1683,35 +1683,40 @@\n tSize()%0A        \n-   \n+dureza =\n  self.__grafite \n@@ -1718,44 +1718,90 @@\n fite\n- = minimo_grafite%0A            return\n+.gethardness()%0A        gasto = %7B'HB': 1, '2B': 2, '4B': 4, '6B': 6%7D.get(dureza, 1)\n %0A%0A  \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_20-59-38",
+            "content": "@@ -1797,16 +1797,17 @@\n  return%0A\n+%0A\n         \n@@ -1952,17 +1952,16 @@\n sheet()%0A\n-%0A\n         \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_21-00-04",
+            "content": "@@ -1480,123 +1480,8 @@\n  10%0A\n-        if self.__grafite == None:%0A            print('fail: nao existe grafite')%0A            return self.__grafite%0A\n     \n@@ -1525,16 +1525,16 @@\n tSize()%0A\n+\n         \n@@ -1639,17 +1639,16 @@\n eza, 1)%0A\n-%0A\n         \n@@ -1770,32 +1770,166 @@\n  minimo_grafite%0A\n+            return%0A        if self.__grafite == None:%0A            print('fail: nao existe grafite')%0A            return self.__grafite%0A\n         self.__g\n@@ -1947,24 +1947,25 @@\n epersheet()%0A\n+%0A\n         %0A   \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_21-00-48",
+            "content": "@@ -1591,25 +1591,16 @@\n grafite%0A\n-        %0A\n         \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-25_21-01-18",
+            "content": "@@ -1698,44 +1698,8 @@\n ss()\n-%0A%0A        # Define o gasto por folha\n %0A   \n@@ -1768,183 +1768,8 @@\n 1)%0A%0A\n-        if tamanho_atual %3C= minimo_grafite:%0A            print('fail: tamanho insuficiente')%0A            return%0A%0A        # Se n%C3%A3o tiver grafite suficiente pra terminar a folha%0A\n     \n@@ -1892,96 +1892,20 @@\n e = \n-None  # grafite se perde%0A            return%0A%0A        # Caso contr%C3%A1rio, escreve normalmen\n+minimo_grafi\n te%0A \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_21-01-56",
+            "content": "@@ -1476,17 +1476,16 @@\n te = 10%0A\n-%0A\n         \n@@ -1694,16 +1694,52 @@\n rdness()\n+%0A%0A        # Define o gasto por folha\n %0A       \n@@ -1800,16 +1800,191 @@\n za, 1)%0A%0A\n+        if tamanho_atual %3C= minimo_grafite:%0A            print('fail: tamanho insuficiente')%0A            return%0A%0A        # Se n%C3%A3o tiver grafite suficiente pra terminar a folha%0A\n         \n@@ -2009,17 +2009,16 @@\n  gasto %3C\n-=\n  minimo_\n@@ -2099,28 +2099,104 @@\n afite = \n-minimo_grafi\n+None  # grafite se perde%0A            return%0A%0A        # Caso contr%C3%A1rio, escreve normalmen\n te%0A     \n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-10-25_21-02-53",
+            "content": "@@ -1799,16 +1799,17 @@\n  gasto %3C\n+=\n  minimo_\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_21-03-24",
+            "content": "@@ -1908,27 +1908,8 @@\n ite%0A\n-            return%0A\n     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_21-04-12",
+            "content": "@@ -1604,111 +1604,8 @@\n     \n-if self.__grafite == minimo_grafite:%0A            print('fail: tamanho insuficiente')%0A            return\n %0A   \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-25_21-06-00",
+            "content": "@@ -1592,16 +1592,127 @@\n grafite%0A\n+        if self.__grafite == minimo_grafite:%0A            print('fail: tamanho insuficiente')%0A            return\n %0A       \n@@ -1872,119 +1872,8 @@\n 1)%0A%0A\n-        if tamanho_atual %3C= minimo_grafite:%0A            print('fail: tamanho insuficiente')%0A            return%0A\n     \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-25_21-06-46",
+            "content": "@@ -2029,64 +2029,8 @@\n turn\n- f'calibre: %7Bself.__calibre%7D, grafite: %7Bminimo_grafite%7D'\n %0A   \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-25_21-07-39",
+            "content": "@@ -2015,43 +2015,8 @@\n     \n-    self.__grafite.usagepersheet()%0A\n     \n@@ -2082,16 +2082,55 @@\n afite%7D'%0A\n+        self.__grafite.usagepersheet()%0A\n         \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-25_21-07-57",
+            "content": "@@ -2042,24 +2042,95 @@\n epersheet()%0A\n+        return f'calibre: %7Bself.__calibre%7D, grafite: %7Bminimo_grafite%7D'%0A\n         %0A   \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-25_21-08-27",
+            "content": "@@ -2007,35 +2007,16 @@\n grafite%0A\n-            return%0A\n         \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-25_21-08-34",
+            "content": "@@ -468,85 +468,8 @@\n = 6%0A\n-    def setSize(self, novo_tamanho: int):%0A        self.__size = novo_tamanho%0A\n     \n@@ -1993,17 +1993,11 @@\n fite\n-.setSize(\n+ = \n mini\n@@ -2006,17 +2006,16 @@\n _grafite\n-)\n %0A       \n@@ -2025,17 +2025,16 @@\n   return\n- \n %0A       \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-25_21-14-04",
+            "content": "class Grafite:\n    def __init__(self, thickness: float, hardness: str, size:int):\n        self.__size = size\n        self.__thickness = thickness\n        self.__hardness = hardness\n\n    def usagepersheet(self):\n        if self.__hardness == 'HB':\n            self.__size -= 1\n        if self.__hardness == '2B':\n            self.__size -= 2\n        if self.__hardness == '4B':\n            self.__size -= 4\n        if self.__hardness == '6B':\n            self.__size -= 6\n    def setSize(self, novo_tamanho: int):\n        self.__size = novo_tamanho\n    def getthickness(self):\n        return self.__thickness\n    def gethardness(self):\n        return self.__hardness\n    def getSize(self):\n        return self.__size\n    def thickness(self):\n        return self.__thickness\n    def __str__(self):\n        return f'[{self.__thickness}:{self.__hardness}:{self.__size}]'\nclass Lapiseira:\n    def __init__(self, calibre):\n        self.__calibre = calibre\n        self.__grafite = None\n\n    def temGrafite(self) -> bool:\n        return self.__grafite is not None\n\n    def inserir(self, grafite: Grafite) -> bool:\n        if grafite.getthickness() != self.__calibre:\n            print('fail: calibre incompativel')\n            return False\n        if self.__grafite is not None:\n            print('fail: ja existe grafite')\n            return False\n        self.__grafite = grafite\n        return True\n    def remover(self) -> Grafite | None:\n        grafite_removido = self.__grafite\n        self.__grafite = None\n    def escrever(self):\n        minimo_grafite = 10\n\n        if self.__grafite == None:\n            print('fail: nao existe grafite')\n            return self.__grafite\n\n        tamanho_atual = self.__grafite.getSize()\n        dureza = self.__grafite.gethardness()\n        gasto = {'HB': 1, '2B': 2, '4B': 4, '6B': 6}.get(dureza, 1)\n\n        if tamanho_atual <= minimo_grafite:\n            print('fail: tamanho insuficiente')\n            return\n        if tamanho_atual - gasto < minimo_grafite:\n            print('fail: folha incompleta')\n            self.__grafite.setSize(minimo_grafite)\n            return \n        self.__grafite.usagepersheet()\n        \n    def __str__(self) -> str:\n        if self.__grafite == None:\n            estado = 'null'\n            return f'calibre: {self.__calibre}, grafite: {estado}'\n        return f'calibre: {self.__calibre}, grafite: {self.__grafite}'\n\ndef main():\n    polis = Lapiseira(' ')\n    while True: \n        line: str = input()\n        args: list[str] = line.split(' ')\n        print(f'$' + line)\n\n        if args[0] == 'end': \n            break\n        elif args[0] == 'init':\n            calibre = float(args[1])\n            polis = Lapiseira(calibre)\n        elif args[0] == 'show':\n            print(polis)\n        elif args[0] == 'insert':\n            thickness = float(args[1])\n            hardness = args[2]\n            size = int(args[3])\n            graf = Grafite(thickness, hardness, size)\n            polis.inserir(graf)\n        elif args[0] == 'remove':\n            polis.remover()\n        elif args[0] == 'write':\n            polis.escrever()\nmain()",
+            "lines": "98"
         }
     ]
 }

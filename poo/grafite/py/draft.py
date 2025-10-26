@@ -4,6 +4,17 @@ class Grafite:
         self.__thickness = thickness
         self.__hardness = hardness
 
+    def usagepersheet(self):
+        if self.__hardness == 'HB':
+            self.__size -= 1
+        if self.__hardness == '2B':
+            self.__size -= 2
+        if self.__hardness == '4B':
+            self.__size -= 4
+        if self.__hardness == '6B':
+            self.__size -= 6
+    def setSize(self, novo_tamanho: int):
+        self.__size = novo_tamanho
     def getthickness(self):
         return self.__thickness
     def gethardness(self):
@@ -35,9 +46,24 @@ class Lapiseira:
         grafite_removido = self.__grafite
         self.__grafite = None
     def escrever(self):
+        minimo_grafite = 10
+
         if self.__grafite == None:
             print('fail: nao existe grafite')
             return self.__grafite
+
+        tamanho_atual = self.__grafite.getSize()
+        dureza = self.__grafite.gethardness()
+        gasto = {'HB': 1, '2B': 2, '4B': 4, '6B': 6}.get(dureza, 1)
+
+        if tamanho_atual <= minimo_grafite:
+            print('fail: tamanho insuficiente')
+            return
+        if tamanho_atual - gasto < minimo_grafite:
+            print('fail: folha incompleta')
+            self.__grafite.setSize(minimo_grafite)
+            return 
+        self.__grafite.usagepersheet()
         
     def __str__(self) -> str:
         if self.__grafite == None:
