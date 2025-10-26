@@ -26,16 +26,24 @@ class Moto:
     def insertpass(self, passageiro: Pessoa, custo: int):
         self.__passageiro = passageiro
     def drive(self, custo: int):
-        self.__custo = custo
+        self.__custo += custo
+        return self.__custo
     def leavepass(self):
-        if self.__passageiro == None:
-            print('fail: no passenger to leave')
         passageiro = self.__passageiro
         motorista = self.__motorista
-        dinheiro_pass = passageiro.getDinheiro()
         custo = self.__custo
-        passageiro.setDinheiro(-custo)
-        motorista.setDinheiro(custo)
+        dinheiro_pass = passageiro.getDinheiro()
+        if self.__passageiro == None:
+            print('fail: no passenger to leave')
+        if self.__passageiro.getDinheiro() < custo:
+            print('fail: Passenger does not have enough money')
+        if dinheiro_pass >= custo:
+            passageiro.setDinheiro(-custo)
+            motorista.setDinheiro(custo)
+        else:
+            valor_pagar = dinheiro_pass
+            passageiro.setDinheiro(-valor_pagar)
+            motorista.setDinheiro(custo)
         pessoa_removida = self.__passageiro
         print(f'{pessoa_removida} left')
         self.__passageiro = None
@@ -63,6 +71,6 @@ def main():
         elif args[0] == 'drive':
             custo = int(args[1])
             motouber.drive(custo)
-        elif args[0] == 'leavepass':
+        elif args[0] == 'leavePass':
             motouber.leavepass()
 main()

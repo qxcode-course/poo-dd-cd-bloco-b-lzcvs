@@ -23,7 +23,7 @@ tasks:
   poo@relogio: '{rate:100, iagen:deepseek, alone:9, study:120}'
   poo@motoca: '{rate:100, iagen:chatgpt, alone:8, study:190}'
   poo@grafite: '{rate:100, iagen:gpt, guide:video, alone:7, study:90}'
-  poo@motouber: '{rate:62}'
+  poo@motouber: '{rate:100, human:monitor, iagen:deepseek, alone:8, study:120}'
 flags:
   quests: 0
   tracks: 0
